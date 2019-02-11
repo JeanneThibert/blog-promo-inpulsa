@@ -51,3 +51,19 @@ register_nav_menus( array('primary' => 'principal', 'secondary' => 'deuxième' )
 }
 
 add_action('after_setup_theme', 'inpulsa_setup');
+
+//  Commande pour afficher date et catégorie
+
+function inpulsa_give_me_meta_01($date1, $date2, $cat, $tags) {
+
+    $chaine = 'publié le <time class="entry-date" datetime="';
+    $chaine .= $date1;
+    $chaine .= '">';
+    $chaine .= $date2;
+    $chaine .= '</time> dans la catégorie ';
+    $chaine .= $cat;
+    $chaine .= ' avec les étiquettes: '. $tags;
+
+    return $chaine;
+
+}
