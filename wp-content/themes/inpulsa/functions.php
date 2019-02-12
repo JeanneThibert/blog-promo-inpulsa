@@ -54,7 +54,7 @@ add_action('after_setup_theme', 'inpulsa_setup');
 
 //  Commande pour afficher date et catégorie
 
-function inpulsa_give_me_meta_01($date1, $date2, $cat, $tags) {
+function inpulsa_give_me_meta_01($date1, $date2, $cat) {
 
     $chaine = 'publié le <time class="entry-date" datetime="';
     $chaine .= $date1;
@@ -62,8 +62,20 @@ function inpulsa_give_me_meta_01($date1, $date2, $cat, $tags) {
     $chaine .= $date2;
     $chaine .= '</time> dans la catégorie ';
     $chaine .= $cat;
-    $chaine .= ' avec les étiquettes: '. $tags;
+    // $chaine .= ' avec les étiquettes: '. $tags;
 
     return $chaine;
 
 }
+
+function new_excerpt_more($more) {
+    return '';
+    }
+    add_filter('excerpt_more', 'new_excerpt_more', 21 );
+    
+    function the_excerpt_more_link( $excerpt ){
+    $post = get_post();
+    $excerpt .= '<a href="'. get_permalink($post->ID) . '">Lire la suite</a>.';
+    return $excerpt;
+    }
+    add_filter( 'the_excerpt', 'the_excerpt_more_link', 21 );
