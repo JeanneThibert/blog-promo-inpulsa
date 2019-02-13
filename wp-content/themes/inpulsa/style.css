@@ -9,3 +9,7 @@ Text Domain: Inpulsa
 body {
     background-color: rgb(255, 255, 255);
 }
+
+.aligncenter { margin: auto;}
+
+.panel img { margin-bottom: 15px; }
