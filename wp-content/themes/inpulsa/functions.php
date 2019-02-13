@@ -62,7 +62,7 @@ function inpulsa_give_me_meta_01($date1, $date2, $cat, $tags) {
     $chaine .= $date2;
     $chaine .= '</time> dans la catégorie ';
     $chaine .= $cat;
-    $chaine .= ' avec les étiquettes: '. $tags;
+    // $chaine .= ' avec les étiquettes: '. $tags;
 
     return $chaine;
 
