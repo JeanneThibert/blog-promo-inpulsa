@@ -18,11 +18,6 @@ $req_blog = new WP_Query($args_blog); ?>
                         <div class="panel-heading">
                             <h2><?php the_title(); ?></h2>
                         </div>
-                        <div class="panel-body">
-                            <?php the_post_thumbnail('medium',
-                             array('class' => 'img-fluid aligncenter' ) ); ?>
-                            <?php the_excerpt(); ?>
-                        </div>
                         <div class="panel-footer">
                             <p> 
                                 <?php
@@ -34,6 +29,12 @@ $req_blog = new WP_Query($args_blog); ?>
                                 ); ?>
                             </p>
                         </div>
+                        <div class="panel-body">
+                            <?php the_post_thumbnail('medium',
+                             array('class' => 'img-fluid aligncenter' ) ); ?>
+                            <?php the_excerpt(); ?>
+                        </div>
+                        
                     </div>
                 </div>
             <?php endwhile; wp_reset_postdata(); ?>
