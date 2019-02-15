@@ -42,45 +42,13 @@ $req_blog = new WP_Query($args_blog); ?>
                     </div>
                     
                 </div>
-            </div>
+            
             <?php endwhile; wp_reset_postdata(); ?>
         </div>
-    </div>
+        </div>
 </section>
 
 <?php endif; ?>
 
 
-<section>
-    <div class="container">
-
-        <?php if (have_posts()): ?>
-
-        <?php while(have_posts()): the_post(); ?>
-        <div class="row">
-            <div class="col-12">
-
-                <?php the_excerpt(); ?>
-            </div>
-
-        </div>
-
-        <?php endwhile; ?>
-
-        <?php else: ?>
-        <div class="row">
-            <div class="col-12">
-                <p>
-                    il n'y a pas de résultats
-                </p>
-            </div>
-        </div>
-
-        <?php 
-
-endif;
-
-?>
-    </div>
-</section>
 <?php get_footer(); ?>
