@@ -6,6 +6,9 @@
 );
 $req_blog = new WP_Query($args_blog); ?>
 
+
+
+
 <?php if ($req_blog->have_posts()): ?>
 
 <section id="blog-front">
@@ -44,11 +47,10 @@ $req_blog = new WP_Query($args_blog); ?>
                 </div>
             
             <?php endwhile; wp_reset_postdata(); ?>
-        </div>
+            </div>
         </div>
 </section>
 
 <?php endif; ?>
-
 
 <?php get_footer(); ?>
