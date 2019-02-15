@@ -1,15 +1,4 @@
-/*
-Theme Name: Inpulsa
-Author: inpulsa team
-Description: thème pour le blog de promo 
-Version: 1.0
-Text Domain: Inpulsa
-*/
-
 body {
-    background-color: rgb(255, 255, 255);
-}
+  background-color: aqua; }
 
-.aligncenter { margin: auto;}
-
-.panel img { margin-bottom: 15px; }
+/*# sourceMappingURL=style.css.map */

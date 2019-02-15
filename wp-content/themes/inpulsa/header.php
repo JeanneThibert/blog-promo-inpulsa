@@ -15,17 +15,17 @@
     <meta name="description" content="Le site présente un contenu de type page " />
 <?php endif; ?>
     <?php if(is_category()): ?>
-    <meta name="description" content="Liste des articles pour la catégorie [<?php echo single_cat_title('',false); ?>] />
+    <meta name="description" content="Liste des articles pour la catégorie [<?php echo single_cat_title('',false); ?>] "/>
 <?php endif; ?>
     <?php if(is_tag()): ?>
-    <meta name="description" content="Liste des articles reliés avec l'étiquette [<?php echo single_tag_title('',false); ?>] >
+    <meta name="description" content="Liste des articles reliés avec l'étiquette [<?php echo single_tag_title('',false); ?>] " />
 <?php endif; ?>
     <?php wp_head(); ?>
 
 
 </head>
 <body>
-    <header>
+    <header >
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="/">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,6 +49,8 @@
 
 
         </nav>
+        <div class="time-lapse"> </div>
+
     </header>
     <div class="container">
         <div class="jumbotron">
