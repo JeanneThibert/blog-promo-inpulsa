@@ -6,12 +6,7 @@ $args_blog = array(
     'post_type' => 'post',
     'posts_per_page' => 2 
 );
-$req_blog = new WP_Query($args_blog);
-
-var_dump($req_blog);
-var_dump(wp_query);   die();
-
-?>
+$req_blog = new WP_Query($args_blog); ?>
 
 <section>
     <div class="container">
