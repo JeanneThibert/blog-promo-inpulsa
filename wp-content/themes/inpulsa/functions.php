@@ -19,12 +19,68 @@ add_action('wp_enqueue_scripts', 'inpulsa_scripts');
 
 
 // chargement de l'admin
-function inpulsa_admin_scripts(){
+function inpulsa_admin_init(){
 
-    wp_enqueue_style( 'bootstrap-adm-core', get_template_directory_uri() . '/css/bootstrap.min.css', array(), INPULSA_VERSION );
+// *******************action 1
+    function inpulsa_admin_scripts(){
+        if(!isset($_GET['page']) || $_GET['page'] != "inpulsa_theme_opts"){
+            return;
+        }
+    // chargement des styles admin 
+        wp_enqueue_style( 'bootstrap-adm-core', get_template_directory_uri() . '/css/bootstrap.min.css', array(), INPULSA_VERSION );
+   
+     // chargement des scripts admin
+    wp_enqueue_media();
+    wp_enqueue_script( 'inpulsa-admin-init' , get_template_directory_uri() . '/js/admin-options.js',
+    array() , INPULSA_VERSION, true);
+     }// fin de inpulsa_scripts
+
+    add_action('admin_enqueue_scripts', 'inpulsa_admin_scripts');
+
+
+// ********************action2
+
+    include('includes/save-options-page.php');
+    add_action('admin_post_inpulsa_save_options' , 'inpulsa_save_options');
+
+} // fin de inpulsa_admin_init
+    add_action('admin_init', 'inpulsa_admin_init');
+
+
+
+
+// activation des options
+
+function inpulsa_activ_options(){
+    $theme_opts = get_option('inpulsa_opts');
+    if(!$theme_opts){
+        $opts = array(
+            'image_01_url'             =>'',
+            'legend_01'                =>''
+        );
+        add_option('inpulsa_opts' , $opts);
+
+    }
+
 }
 
-add_action('admin_init', 'inpulsa_admin_scripts');
+add_action('after_switch_theme' , 'inpulsa_activ_options');
+
+
+// *********************MENU OPTIONS DU THEME
+
+function inpulsa_admin_menus(){
+    add_menu_page(
+        'Inpulsa Options',
+        'Options du thème',
+        'publish_pages',
+        'inpulsa_theme_opts',
+        'inpulsa_build_options_page'
+    );
+    include('includes/build-options-page.php'); //contient la fonction inpulsa_build_options_page
+}
+
+add_action('admin_menu' , 'inpulsa_admin_menus');
 
 
 // utilitaires
