@@ -1,13 +1,34 @@
-<footer class="jumbotron">
-    <div class="container"> 
-        <div class="row">
-            <div class="col-12">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellendus necessitatibus perferendis illo, aliquam natus deleniti quaerat ad expedita, blanditiis nemo dolorum fugit ducimus hic, recusandae laborum? Totam, quis obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eum necessitatibus quam itaque, ipsum accusantium dolores alias accusamus iste et. Iusto porro voluptates illum eligendi aperiam ad perspiciatis numquam consequatur.</p>
+<footer class="container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div class="row w-100">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-start">
+                <h5>À Propos</h5>
+                <p class="text-apropos">Si la formation t'intéresse n'hésite pas à <a href="#" class="lien-hover">nous contacter</a> pour la prochaine session.</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                <img src="../../../gravit/access.png" alt="logo-acs">
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-end">
+                <p class="lien-hover">Mentions légales</p>
+                <p class="lien-hover">RGPD</p>
             </div>
         </div>
-    </div>
-    </footer>
-  
+       <div class="row w-100">
+           <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-start">
+               <img src="../../../gravit/online.png" alt="online">
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 icones d-flex justify-content-center align-items-center">
+                <a href="#"> <i class="fab fa-facebook-square"></i></a>
+                <a href="#"> <i class="fab fa-twitter"></i></a>
+                <a href="#"> <i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-end">
+                <img src="../../../gravit/gen.png" alt="gen">
+            </div>
+        </div>
+</footer>
+<div class="copyright d-flex justify-content-center align-items-center">
+    <p>Tout droits réservés ©2019 | fait avec <i class="far fa-heart"></i> par Inpulsa Team</p>
+</div>  
     <?php wp_footer(); ?>
 </body>
 </html>

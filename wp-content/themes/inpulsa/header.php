@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Ce site est le blog de la promo 23 inpulsa Team L'ACS de Vesoul">
-
     <?php if (is_home()): ?>
         <meta name ="description" content="Le site présente la page des articles du blog " />
 <?php endif; ?>
@@ -25,14 +24,16 @@
 
 </head>
 <body>
+    
+    <!--
     <header >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top mt-5 navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="/">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-
+            
+            
             <?php
             wp_nav_menu( array(
                 'theme_location'  => 'primary',
@@ -43,17 +44,23 @@
                 'menu_class'      => 'navbar-nav mr-auto',
                 'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
                 'walker'          => new WP_Bootstrap_Navwalker(),
-            ) );
-            ?>
+                ) );
+                ?>
 
 
 
-        </nav>
-        <div class="time-lapse"> </div>
+</nav>
+<div class="time-lapse"> </div>
 
-    </header>
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Hello bienvenue sur sur le blog</h1>
-        </div>
-    </div>
+</header>
+-->
+
+<header class="d-flex justify-content-center align-items-center">
+    <nav class="container-fluid nav-pc d-flex justify-content-center align-items-center">
+        <a href="" class="liens">Membres</a>
+        <a href="" class="liens">Galerie</a>
+        <img src="../../../gravit/logo-blanc.png" alt="logo">
+        <a href="" class="liens">Articles</a>
+        <a href="" class="liens">Contact</a>
+    </nav>
+</header>

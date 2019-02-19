@@ -17,6 +17,23 @@ function inpulsa_scripts(){
 
 add_action('wp_enqueue_scripts', 'inpulsa_scripts');
 
+//google font
+
+
+function add_google_fonts() {
+ 
+wp_enqueue_style( ' add_google_fonts ', 'https://fonts.googleapis.com/css?family=Proza+Libre|Quicksand|Amita', false );}
+ 
+add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
+
+// font awesome
+
+function wpb_load_fa() {
+ 
+    wp_enqueue_style( 'wpb-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', false );}
+     
+    add_action( 'wp_enqueue_scripts', 'wpb_load_fa' );
+
 
 // chargement de l'admin
 function inpulsa_admin_init(){

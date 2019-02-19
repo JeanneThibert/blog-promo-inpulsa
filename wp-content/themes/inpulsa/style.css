@@ -1,3 +1,144 @@
+.wallpaperheader {
+  background: url(assets/completecontactpage.jpeg);
+  background-repeat: no-repeat;
+  height: 70vh; }
+
+.editcontacttitle {
+  color: white;
+  font-size: 4rem;
+  height: 70vh; }
+
+.edittitleform {
+  color: slategrey;
+  margin-top: 8vh;
+  font-size: 4vh; }
+
+.formulaire {
+  margin-top: 100px; }
+
+.contact-form {
+  list-style-type: none; }
+  .contact-form li div {
+    margin-bottom: 2.5em; }
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 1.4em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px solid slategrey;
+    background: #FFFFFFF;
+    font-family: 'Roboto', sans-serif;
+    color: slategrey;
+    font-weight: 500;
+    font-size: 20px;
+    transition: ease-in-out 1.00s; }
+  .contact-form textarea {
+    min-height: 50px;
+    max-height: 500px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    resize: vertical;
+    overflow: hidden; }
+  .contact-form ::-webkit-input-placeholder {
+    font-size: 12px;
+    color: slategrey;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: flex;
+    text-align: center; }
+  .contact-form label {
+    font-size: 12px;
+    color: slategrey;
+    text-transform: uppercase;
+    font-weight: 400; }
+  .contact-form input:focus,
+  .contact-form select:focus,
+  .contact-form textarea:focus,
+  .contact-form button:focus {
+    outline: none;
+    resize: none;
+    border-bottom: 3px solid #8400ff; }
+  .contact-form #slider-range-min {
+    outline: 0;
+    background: slategrey;
+    height: 3.6em;
+    border: 0;
+    border-radius: 0; }
+    .contact-form #slider-range-min .ui-slider-range {
+      background: #8400ff;
+      border-radius: 0; }
+    .contact-form #slider-range-min .ui-slider-handle {
+      outline: 0;
+      top: 1.1em;
+      margin-left: -.6em;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 0;
+      background: white;
+      cursor: pointer; }
+  .contact-form #amount {
+    border: 0;
+    color: slategrey;
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 1.1em;
+    letter-spacing: 3px; }
+  .contact-form button {
+    border-radius: 10px;
+    color: slategrey;
+    background: rgba(34, 34, 34, 0);
+    border: 3px solid #8400ff;
+    height: 70px;
+    width: 150px;
+    float: right;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: ease-in-out 0.25s; }
+    .contact-form button span {
+      transition: ease-in-out 0.25s; }
+  .contact-form button:hover {
+    background: #8400ff;
+    color: white; }
+    .contact-form button:hover span {
+      padding-left: 10px;
+      color: white; }
+
+.size-form {
+  width: 350px;
+  margin-left: 368px; }
+
+#map {
+  height: 100vh;
+  width: 100%; }
+
+.image--cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  border: 2px solid rgba(51, 37, 74, 0.486); }
+
+.text-inpulsa {
+  width: 200px;
+  height: 200px;
+  line-height: 200px; }
+
 .img_header_article {
   background: url("../../../gravit/fond_maquette_final_filtre.svg") no-repeat center;
   height: 60vh;
@@ -6,10 +147,8 @@
 .texte {
   color: white;
   font-size: 60px;
-  text-align: center; }
-
-body {
-  padding-top: 75px; }
+  text-align: center;
+  font-family: 'Proza Libre', sans-serif; }
 
 .search-container {
   width: 300px;
@@ -48,5 +187,101 @@ input#search-bar {
   height: 75px;
   top: -62px;
   right: -15px; }
+
+.nav-pc {
+  position: absolute;
+  top: 0vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Quicksand', sans-serif; }
+  .nav-pc a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 30px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: .2s; }
+    .nav-pc a:hover {
+      transform: translateY(-4px);
+      color: #c0c0c0; }
+  .nav-pc img {
+    height: 140px;
+    transition: .82s; }
+    .nav-pc img:hover {
+      transform: translateY(4px) scale(0.95) rotateZ(-20deg); }
+
+footer {
+  background-color: #1E1E1E;
+  color: #fff;
+  padding: 5vh 5vw !important;
+  font-family: 'Quicksand', sans-serif; }
+  footer .text-apropos {
+    width: 70% !important; }
+  footer .lien-hover {
+    color: #7b7b7b; }
+    footer .lien-hover:hover {
+      color: #fff;
+      text-decoration: none; }
+  footer .icones i {
+    font-size: 3rem;
+    margin: 2.5vw;
+    color: #7b7b7b;
+    transition: .1s; }
+    footer .icones i:hover {
+      color: #fff;
+      transform: scale(1.1) translateY(-3px); }
+
+.copyright {
+  background-color: #171717;
+  padding: 4vh; }
+  .copyright p {
+    margin: 0 !important;
+    color: #848484; }
+
+.section-accueil {
+  height: 100vh;
+  background: url(../../../gravit/bg-accueil.jpeg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'Proza Libre', sans-serif; }
+  .section-accueil h1 {
+    font-size: 4rem;
+    font-weight: 700; }
+  .section-accueil a {
+    text-decoration: none;
+    color: #fff; }
+
+.section-presentation {
+  padding: 10vh;
+  margin-top: -10vh;
+  z-index: 1000;
+  position: relative;
+  background-color: #33254A;
+  color: #fff;
+  box-shadow: 5px -4px 20px #0000007a;
+  font-family: 'Quicksand', sans-serif; }
+  .section-presentation h2 {
+    letter-spacing: 10px;
+    font-size: 2.3rem; }
+  .section-presentation hr {
+    border-top: 1px solid #fff;
+    width: 20%;
+    transform: rotate(90deg);
+    margin-top: 7vh;
+    margin-bottom: 10vh; }
+  .section-presentation p {
+    text-align: justify; }
+
+.img-codeur {
+  height: 50vh;
+  background: url(../../../gravit/team.jpeg);
+  background-position: center;
+  background-size: cover;
+  margin-top: -10vh; }
+
+.section-projet {
+  padding: 10vh; }
+  .section-projet h4 {
+    font-size: 2.5rem;
+    font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
