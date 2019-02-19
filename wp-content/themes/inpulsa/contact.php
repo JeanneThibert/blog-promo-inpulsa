@@ -13,7 +13,7 @@ get_header(); ?>
 
 <div class="d-flex justify-content-center"><h2 class="edittitleform">Vos renseignements</h2></div>
 
-<div class="container p-0">
+<div class="container formulaire p-0">
   <div class="container-fluid">
 
     <div class="col-md-12">
