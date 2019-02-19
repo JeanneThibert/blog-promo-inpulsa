@@ -13,18 +13,18 @@ get_header(); ?>
 
 <div class="d-flex justify-content-center"><h2 class="edittitleform">Vos renseignements</h2></div>
 
-<div class="container p-0">
+<div class="container formulaire p-0">
   <div class="container-fluid">
 
     <div class="col-md-12">
       <form method="post" action="submit.php">
         <ul class="contact-form p-0">
           <li class="size-form">
-            <div class="">
+            <div>
               <input name="name" placeholder="Prénom" required="required" size="8" type="text">
             </div>
 
-            <div class="">
+            <div>
               <input name="email" placeholder="Email" required="required" size="8" type="email">
             </div>
           </li>

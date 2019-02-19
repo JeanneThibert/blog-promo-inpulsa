@@ -17,7 +17,7 @@ $req_blog = new WP_Query($args_blog); ?>
         <span class="wrap"></span>
       </a>
     </h1>
-   
+    
 </section>
 <section class="container section-presentation d-flex flex-column justify-content-center align-items-center">
     <div class="lapromo ">
