@@ -1,4 +1,97 @@
-body {
-  background-color: aqua; }
+.nav-pc {
+  position: absolute;
+  top: 0vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Quicksand', sans-serif; }
+  .nav-pc a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 30px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: .2s; }
+    .nav-pc a:hover {
+      transform: translateY(-4px);
+      color: #c0c0c0; }
+  .nav-pc img {
+    height: 140px;
+    transition: .82s; }
+    .nav-pc img:hover {
+      transform: translateY(4px) scale(0.95) rotateZ(-20deg); }
+
+footer {
+  background-color: #1E1E1E;
+  color: #fff;
+  padding: 5vh 5vw !important;
+  font-family: 'Quicksand', sans-serif; }
+  footer .text-apropos {
+    width: 70% !important; }
+  footer .lien-hover {
+    color: #7b7b7b; }
+    footer .lien-hover:hover {
+      color: #fff;
+      text-decoration: none; }
+  footer .icones i {
+    font-size: 3rem;
+    margin: 2.5vw;
+    color: #7b7b7b;
+    transition: .1s; }
+    footer .icones i:hover {
+      color: #fff;
+      transform: scale(1.1) translateY(-3px); }
+
+.copyright {
+  background-color: #171717;
+  padding: 4vh; }
+  .copyright p {
+    margin: 0 !important;
+    color: #848484; }
+
+.section-accueil {
+  height: 100vh;
+  background: url(../../../gravit/bg-accueil.jpeg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'Proza Libre', sans-serif; }
+  .section-accueil h1 {
+    font-size: 4rem;
+    font-weight: 700; }
+  .section-accueil a {
+    text-decoration: none;
+    color: #fff; }
+
+.section-presentation {
+  padding: 10vh;
+  margin-top: -10vh;
+  z-index: 1000;
+  position: relative;
+  background-color: #33254A;
+  color: #fff;
+  box-shadow: 5px -4px 20px #0000007a;
+  font-family: 'Quicksand', sans-serif; }
+  .section-presentation h2 {
+    letter-spacing: 10px;
+    font-size: 2.3rem; }
+  .section-presentation hr {
+    border-top: 1px solid #fff;
+    width: 20%;
+    transform: rotate(90deg);
+    margin-top: 7vh;
+    margin-bottom: 10vh; }
+  .section-presentation p {
+    text-align: justify; }
+
+.img-codeur {
+  height: 50vh;
+  background: url(../../../gravit/team.jpeg);
+  background-position: center;
+  background-size: cover;
+  margin-top: -10vh; }
+
+.section-projet {
+  padding: 10vh; }
+  .section-projet h4 {
+    font-size: 2.5rem;
+    font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
