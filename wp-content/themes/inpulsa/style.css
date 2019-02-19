@@ -50,9 +50,7 @@
     font-size: 12px;
     color: slategrey;
     text-transform: uppercase;
-    font-weight: 400;
-    display: flex;
-    text-align: center; }
+    font-weight: 400; }
   .contact-form label {
     font-size: 12px;
     color: slategrey;
@@ -121,23 +119,85 @@
   height: 100vh;
   width: 100%; }
 
-.image--cover {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-  border: 2px solid rgba(51, 37, 74, 0.486); }
+.page-membre {
+  height: 50vh;
+  background: url(../../../gravit/bg-accueil.jpeg);
+  background-position: center;
+  background-size: cover; }
 
-.text-inpulsa {
-  width: 200px;
-  height: 200px;
-  line-height: 200px; }
+.section-membre {
+  padding: 10vh 20vw; }
+  .section-membre .image--cover {
+    width: 200px;
+    height: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    border: 2px solid rgba(134, 134, 134, 0.507); }
+  .section-membre .text-inpulsa {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 3rem;
+    font-family: 'Amita', sans-serif; }
+  .section-membre .flip-container {
+    perspective: 1000;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .section-membre .flip-container:hover .flipper, .section-membre .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    filter: FlipH; }
+  .section-membre .flip-container, .section-membre .front, .section-membre .back {
+    width: 250px;
+    height: 250px; }
+  .section-membre .flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative; }
+  .section-membre .front, .section-membre .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .section-membre .front {
+    z-index: 2; }
+  .section-membre .back {
+    background: linear-gradient(#bdc3c7, #2c3e50);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    border-radius: 50%; }
+    .section-membre .back a {
+      margin: 10px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 2.5rem;
+      transition: .1s; }
+      .section-membre .back a:hover {
+        transform: scale(1.15) translateY(-3px);
+        color: #00a3e4; }
+    .section-membre .back p {
+      color: #fff;
+      font-size: 1.2rem; }
+
+.section-galerie h1 {
+  font-size: 4rem;
+  font-weight: 700; }
 
 .img_header_article {
   background: url("../../../gravit/fond_maquette_final_filtre.svg") no-repeat center;
@@ -187,6 +247,24 @@ input#search-bar {
   height: 75px;
   top: -62px;
   right: -15px; }
+
+.navbar {
+  background-color: transparent !important;
+  font-family: 'Quicksand', sans-serif !important; }
+  .navbar .navbar-brand img {
+    height: 140px;
+    transition: .82s; }
+    .navbar .navbar-brand img:hover {
+      transform: translateY(4px) scale(0.95) rotateZ(-20deg); }
+  .navbar .nav-link {
+    color: #fff !important;
+    padding: 0px 30px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: .2s; }
+    .navbar .nav-link:hover {
+      transform: translateY(-4px);
+      color: #c0c0c0; }
 
 .nav-pc {
   position: absolute;
