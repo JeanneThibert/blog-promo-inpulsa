@@ -20,19 +20,19 @@ get_header(); ?>
       <form method="post" action="submit.php">
         <ul class="contact-form p-0">
           <li class="size-form">
-            <div class="">
+            <div>
               <input name="name" placeholder="Prénom" required="required" size="8" type="text">
             </div>
 
-            <div class="">
+            <div>
               <input name="email" placeholder="Email" required="required" size="8" type="email">
             </div>
           </li>
 
 
-          <li>
+          <li class="size-form">
 
-            <div class="col-md-12">
+            <div>
               <textarea class="span12" name="details" placeholder="Message" required="required"></textarea>
             </div>
           </li>
