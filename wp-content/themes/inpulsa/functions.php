@@ -22,7 +22,7 @@ add_action('wp_enqueue_scripts', 'inpulsa_scripts');
 
 function add_google_fonts() {
  
-wp_enqueue_style( ' add_google_fonts ', 'https://fonts.googleapis.com/css?family=Proza+Libre|Quicksand', false );}
+wp_enqueue_style( ' add_google_fonts ', 'https://fonts.googleapis.com/css?family=Proza+Libre|Quicksand|Amita', false );}
  
 add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 
