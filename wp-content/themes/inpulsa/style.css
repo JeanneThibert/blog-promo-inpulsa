@@ -50,9 +50,7 @@
     font-size: 12px;
     color: slategrey;
     text-transform: uppercase;
-    font-weight: 400;
-    display: flex;
-    text-align: center; }
+    font-weight: 400; }
   .contact-form label {
     font-size: 12px;
     color: slategrey;
@@ -120,6 +118,7 @@
 #map {
   height: 100vh;
   width: 100%; }
+
 .nav-pc {
   position: absolute;
   top: 0vh;
