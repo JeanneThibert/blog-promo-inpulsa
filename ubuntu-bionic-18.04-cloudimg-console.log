@@ -583,7 +583,8 @@ ent kernel.
 [[0;32m  OK  [0m] Started Session 1 of user vagrant.
 [[0;32m  OK  [0m] Started Snappy daemon.
          Starting Wait until snapd is fully seeded...
-
+
+
 Ubuntu 18.04.1 LTS ubuntu-bionic ttyS0
 
 ubuntu-bionic login: [   45.101262] cloud-init[1311]: Cloud-init v. 18.4-0ubuntu1~18.04.1 running 'modules:config' at Tue, 19 Feb 2019 07:40:19 +0000. Up 42.14 seconds.
