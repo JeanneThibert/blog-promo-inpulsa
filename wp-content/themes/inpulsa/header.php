@@ -52,6 +52,9 @@
         <div class="time-lapse"> </div>
 
     </header>
+/**
+* A placer dans le contenu de la page car image donc différente selon les pages 
+*/
     <div class="container">
         <div class="jumbotron">
             <h1>Hello bienvenue sur sur le blog</h1>

@@ -1,4 +1,19 @@
-body {
-  background-color: aqua; }
+.image--cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  border: 2px solid rgba(51, 37, 74, 0.486); }
+
+.text-inpulsa {
+  width: 200px;
+  height: 200px;
+  line-height: 200px; }
 
 /*# sourceMappingURL=style.css.map */
