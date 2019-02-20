@@ -17,9 +17,15 @@ function inpulsa_scripts(){
 
 add_action('wp_enqueue_scripts', 'inpulsa_scripts');
 
+function inpulsa_include_custom_jquery() {
+
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+
+}
+add_action('wp_enqueue_scripts', 'inpulsa_include_custom_jquery');
+
 //google font
-
-
 function add_google_fonts() {
  
 wp_enqueue_style( ' add_google_fonts ', 'https://fonts.googleapis.com/css?family=Proza+Libre|Quicksand|Amita', false );}
