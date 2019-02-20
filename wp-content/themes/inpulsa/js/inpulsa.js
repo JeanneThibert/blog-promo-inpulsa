@@ -1,11 +1,19 @@
 jQuery(document).ready(function($){
     
-<<<<<<< HEAD
     // $("h1").css('color', "#f00")
     // MENU GALLERY
 
 
+    // $("h1").css('color', "#f00");
+    $(".profil").click(function(){
+        $(this).toggleClass('turn');
+    });
+
+
 });
+
+    // $("h1").css('color', "#f00")
+    // MENU GALLERY
 
 var selectedClass = "";
 $(".fil-cat").click(function(){ 
@@ -24,15 +32,7 @@ $("#portfolio").fadeTo(300, 1);
 });
    
 
-=======
-    // $("h1").css('color', "#f00");
-    $(".profil").click(function(){
-        $(this).toggleClass('turn');
-    });
 
-});
-
->>>>>>> 899f7c35b16105134080760edf79e2fc08fd7936
 
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -92,6 +92,7 @@ window.onload = function() {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -111,3 +112,8 @@ setTimeout(function() {
 });
 });
 >>>>>>> 899f7c35b16105134080760edf79e2fc08fd7936
+=======
+
+
+
+>>>>>>> 192914194f986b28713170064864e6f3ac2fbcdb

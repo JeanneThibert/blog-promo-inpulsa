@@ -19,18 +19,10 @@ add_action('wp_enqueue_scripts', 'inpulsa_scripts');
 
 function inpulsa_include_custom_jquery() {
 
-<<<<<<< HEAD
-    wp_deregister_script('jquery');
+
+	wp_deregister_script('jquery');
     wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
     
-    }
-    add_action('wp_enqueue_scripts', 'inpulsa_include_custom_jquery');
-
-//google font
-=======
-	wp_deregister_script('jquery');
-	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
->>>>>>> 899f7c35b16105134080760edf79e2fc08fd7936
 
 }
 add_action('wp_enqueue_scripts', 'inpulsa_include_custom_jquery');
