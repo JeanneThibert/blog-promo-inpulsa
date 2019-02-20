@@ -229,15 +229,38 @@
   -o-object-position: center;
   object-position: center;
   border: 2px solid rgba(51, 37, 74, 0.486); }
-.section-galerie .text-inpulsa {
-  width: 200px;
-  height: 200px;
-  line-height: 200px;
-  font-family: 'Amita';
-  font-size: 2rem; }
-.section-galerie .team-membre {
-  font-family: 'Proza Libre ', sans-serif; }
+.section-galerie .toolbar {
+  margin: 100px auto 0; }
+.section-galerie .choice {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative; }
+.section-galerie .choice:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0; }
+.section-galerie .choice:hover:after {
+  width: 100%;
+  left: 0; }
+@media screen and (max-height: 300px) {
+  .section-galerie .toolbar {
+    margin-top: 40px; } }
 .section-galerie #portfolio {
+  font-family: 'Proza Libre ', sans-serif;
   margin: 1rem 0;
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -255,13 +278,32 @@
   transition: all 350ms ease; }
 .section-galerie .scale-anm {
   transform: scale(1); }
+.section-galerie p {
+  padding: 10px;
+  border-bottom: 1px #ccc dotted;
+  text-decoration: none;
+  font-family: lato;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #333;
+  display: block;
+  float: left; }
+.section-galerie p:hover {
+  cursor: pointer;
+  background: #333;
+  color: #eee; }
 .section-galerie .tile img {
   max-width: 100%;
   width: 100%;
   height: auto;
   margin-bottom: 1rem; }
-.section-galerie .button {
+.section-galerie .choice {
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: none;
   cursor: pointer;
+  display: inline-block;
+  line-height: normal;
   padding: .5rem 1rem;
   margin: 0;
   height: auto;
@@ -269,12 +311,18 @@
   -webkit-appearance: none;
   color: #555;
   background-color: transparent; }
-.section-galerie .button:hover {
-  text-decoration: underline;
-  color: #33254A; }
+.section-galerie .choice:hover {
+  text-decoration: none; }
+.section-galerie .choice:focus {
+  outline: none;
+  border-color: var(--darken-2);
+  box-shadow: 0 0 0 3px var(--darken-3); }
 .section-galerie ::-moz-focus-inner {
   border: 0;
   padding: 0; }
+.section-galerie .gallerie:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s linear; }
 
 .img_header_article {
   background: url("../../../gravit/fond_maquette_final_filtre.svg") no-repeat center;

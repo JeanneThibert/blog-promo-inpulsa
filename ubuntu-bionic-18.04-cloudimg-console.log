@@ -578,5 +578,56 @@ Welcome to [1mUbuntu 18.04.1 LTS[0m!
 
 Ubuntu 18.04.1 LTS ubuntu-bionic ttyS0
 
+<<<<<<< HEAD
 ubuntu-bionic login: [   55.433159] cloud-init[1687]: Cloud-init v. 18.4-0ubuntu1~18.04.1 running 'modules:final' at Wed, 20 Feb 2019 15:17:06 +0000. Up 54.91 seconds.
 [   55.477312] cloud-init[1687]: Cloud-init v. 18.4-0ubuntu1~18.04.1 finished at Wed, 20 Feb 2019 15:17:06 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 55.38 seconds
+=======
+ubuntu-bionic login: [   84.800572] cloud-init[1256]: Cloud-init v. 18.4-0ubuntu1~18.04.1 running 'modules:config' at Wed, 20 Feb 2019 07:10:14 +0000. Up 83.62 seconds.
+[   93.409392] cloud-init[1558]: Cloud-init v. 18.4-0ubuntu1~18.04.1 running 'modules:final' at Wed, 20 Feb 2019 07:10:23 +0000. Up 92.82 seconds.
+[   93.409792] cloud-init[1558]: Cloud-init v. 18.4-0ubuntu1~18.04.1 finished at Wed, 20 Feb 2019 07:10:23 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 93.38 seconds
+[  962.088005] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[  962.088005]   Tx Queue             <0>
+[  962.088005]   TDH                  <17>
+[  962.088005]   TDT                  <32>
+[  962.088005]   next_to_use          <32>
+[  962.088005]   next_to_clean        <17>
+[  962.088005] buffer_info[next_to_clean]
+[  962.088005]   time_stamp           <1000284e9>
+[  962.088005]   next_to_watch        <22>
+[  962.088005]   jiffies              <100028700>
+[  962.088005]   next_to_watch.status <0>
+[  964.135159] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[  964.135159]   Tx Queue             <0>
+[  964.135159]   TDH                  <17>
+[  964.135159]   TDT                  <32>
+[  964.135159]   next_to_use          <32>
+[  964.135159]   next_to_clean        <17>
+[  964.135159] buffer_info[next_to_clean]
+[  964.135159]   time_stamp           <1000284e9>
+[  964.135159]   next_to_watch        <22>
+[  964.135159]   jiffies              <100028900>
+[  964.135159]   next_to_watch.status <0>
+[  966.182489] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[  966.182489]   Tx Queue             <0>
+[  966.182489]   TDH                  <17>
+[  966.182489]   TDT                  <32>
+[  966.182489]   next_to_use          <32>
+[  966.182489]   next_to_clean        <17>
+[  966.182489] buffer_info[next_to_clean]
+[  966.182489]   time_stamp           <1000284e9>
+[  966.182489]   next_to_watch        <22>
+[  966.182489]   jiffies              <100028b00>
+[  966.182489]   next_to_watch.status <0>
+[  968.229333] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[  968.229333]   Tx Queue             <0>
+[  968.229333]   TDH                  <17>
+[  968.229333]   TDT                  <32>
+[  968.229333]   next_to_use          <32>
+[  968.229333]   next_to_clean        <17>
+[  968.229333] buffer_info[next_to_clean]
+[  968.229333]   time_stamp           <1000284e9>
+[  968.229333]   next_to_watch        <22>
+[  968.229333]   jiffies              <100028d00>
+[  968.229333]   next_to_watch.status <0>
+[  968.485389] e1000 0000:00:03.0 enp0s3: Reset adapter
+>>>>>>> origin/jeanne
