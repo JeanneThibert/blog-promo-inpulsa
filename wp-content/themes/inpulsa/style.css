@@ -126,7 +126,11 @@
   background-size: cover; }
 
 .section-membre {
-  padding: 10vh 20vw; }
+  padding: 10vh 15vw;
+  /* flip speed goes here */
+  /* hide back of pane during swap */
+  /* front pane, placed above back */
+  /* back, initially hidden pane */ }
   .section-membre .image--cover {
     width: 200px;
     height: 200px;
@@ -148,40 +152,45 @@
     font-size: 3rem;
     font-family: 'Amita', sans-serif; }
   .section-membre .flip-container {
-    perspective: 1000;
-    padding-right: 15px;
-    padding-left: 15px; }
-  .section-membre .flip-container:hover .flipper, .section-membre .flip-container.hover .flipper {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    filter: FlipH; }
+    perspective: 1000px;
+    margin-bottom: 3vh; }
+  .section-membre .turn {
+    transform: rotateY(180deg); }
+  .section-membre .tarjeta:hover {
+    cursor: pointer; }
   .section-membre .flip-container, .section-membre .front, .section-membre .back {
-    width: 250px;
+    width: 100%;
     height: 250px; }
   .section-membre .flipper {
-    -webkit-transition: 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transition: 0.6s;
-    -moz-transform-style: preserve-3d;
-    transition: 0.6s;
+    transition: 1.5s;
     transform-style: preserve-3d;
     position: relative; }
   .section-membre .front, .section-membre .back {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0; }
   .section-membre .front {
-    z-index: 2; }
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    transition: .2s; }
+    .section-membre .front:hover {
+      transform: scale(1.03); }
+      .section-membre .front:hover p {
+        color: #3cabff; }
+      .section-membre .front:hover .image--cover {
+        border: 2px solid #3cabff; }
+    .section-membre .front p {
+      transition: .8s;
+      padding-top: 1.5vh; }
   .section-membre .back {
-    background: linear-gradient(#bdc3c7, #2c3e50);
+    transform: rotateY(180deg);
+    background: linear-gradient(#0084b7, #001b3e);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    border-radius: 50%; }
+    border-radius: 5%; }
     .section-membre .back a {
       margin: 10px;
       text-decoration: none;
@@ -190,10 +199,10 @@
       transition: .1s; }
       .section-membre .back a:hover {
         transform: scale(1.15) translateY(-3px);
-        color: #00a3e4; }
+        color: #16c6ff; }
     .section-membre .back p {
       color: #fff;
-      font-size: 1.2rem; }
+      font-size: 1.3rem; }
 
 .section-galerie h1 {
   font-size: 4rem;

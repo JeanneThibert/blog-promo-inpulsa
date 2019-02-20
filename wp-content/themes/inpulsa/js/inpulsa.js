@@ -1,8 +1,17 @@
 jQuery(document).ready(function($){
     
     // $("h1").css('color', "#f00");
-   
+    $(".profil").click(function(){
+        $(this).toggleClass('turn');
+    });
+    // $(".profil").hover(function(){
+    //     $(this).toggleClass('turn');
+    //     console.log("yo");
+    // });
+
+
 });
+
 
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
