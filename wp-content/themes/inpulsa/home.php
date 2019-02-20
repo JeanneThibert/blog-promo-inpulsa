@@ -3,13 +3,14 @@
 Template Name: articles
 */
 
+?>
 
 
 
 
 
- get_header(); ?>
- 
+<?php get_header(); ?>
+
  <div class="img_header_article container-fluid d-flex justify-content-center align-items-center m-0 p-0">
      <div class="texte">Articles de veille<br>
       technologique</div>
