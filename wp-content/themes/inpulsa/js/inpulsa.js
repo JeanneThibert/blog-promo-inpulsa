@@ -4,11 +4,6 @@ jQuery(document).ready(function($){
     $(".profil").click(function(){
         $(this).toggleClass('turn');
     });
-    // $(".profil").hover(function(){
-    //     $(this).toggleClass('turn');
-    //     console.log("yo");
-    // });
-
 
 });
 

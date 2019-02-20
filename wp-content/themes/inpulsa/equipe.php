@@ -9,8 +9,6 @@ Template Name: Équipe
     
 </section>
 <section class="container-fluid section-membre">
-   
-
     <div class="row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 flip-container">
             <div class="flipper profil">
@@ -19,13 +17,13 @@ Template Name: Équipe
                     <p class="d-flex justify-content-center">Abdelkrim Naji</p>
                 </div>
                 <div class="back d-flex flex-column justify-content-center align-items-center">
-                    <p>Développeur back-end </p>
+                    <p>Développeur Full-Stack </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#">CV</a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="#" class="liens-reseaux">CV</a>
                     </div>
-                    <p>Abdelkrim Naji</p>
+                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -37,13 +35,13 @@ Template Name: Équipe
                     <p class="d-flex justify-content-center">Antonin Landry</p>
                 </div>
                 <div class="back d-flex flex-column justify-content-center align-items-center">
-                    <p>Développeur back-end </p>
+                    <p>Développeur Full-Stack</p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#">CV</a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="#" class="liens-reseaux">CV</a>
                     </div>
-                    <p>Antonin Landry</p> 
+                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -54,13 +52,13 @@ Template Name: Équipe
                     <p class="d-flex justify-content-center">Aurélien Deloye</p>
                 </div>
                 <div class="back d-flex flex-column justify-content-center align-items-center">
-                    <p>Développeur front-end </p>
+                    <p>Développeur Front-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#">CV</a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="#" class="liens-reseaux">CV</a>
                     </div>
-                    <p>Aurélien Deloye</p> 
+                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -71,13 +69,13 @@ Template Name: Équipe
                     <p class="d-flex justify-content-center">Élodie Martin</p>
                 </div>
                 <div class="back d-flex flex-column justify-content-center align-items-center">
-                    <p>Développeur full-stack </p>
+                    <p>Développeur Back-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#">CV</a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="#" class="liens-reseaux">CV</a>
                     </div>
-                    <p>Élodie Martin</p> 
+                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -88,13 +86,13 @@ Template Name: Équipe
                     <p class="d-flex justify-content-center">Fabien Cazalet </p>
                 </div>
                 <div class="back d-flex flex-column justify-content-center align-items-center">
-                    <p>Développeur full-stack</p>
+                    <p>Développeur Full-Stack</p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#">CV</a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="#" class="liens-reseaux">CV</a>
                     </div>
-                   <p>Fabien Cazalet</p> 
+                    <a href="#" class="lien-portfolio">Voir le Portfolio</a> 
                 </div>
             </div>
         </div>
@@ -105,13 +103,13 @@ Template Name: Équipe
                     <p class="d-flex justify-content-center">Gaetan Emond</p>
                 </div>
                 <div class="back d-flex flex-column justify-content-center align-items-center">
-                    <p>Développeur front-end </p>
+                    <p>Développeur Front-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#">CV</a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="#" class="liens-reseaux">CV</a>
                     </div>
-                    <p>Gaetan Emond</p> 
+                    <a href="#" class="lien-portfolio">Voir le Portfolio</a> 
                 </div>
             </div>
         </div>
@@ -122,13 +120,13 @@ Template Name: Équipe
                     <p class="d-flex justify-content-center">Geoffroy Carette </p>
                 </div>
                 <div class="back d-flex flex-column justify-content-center align-items-center">
-                    <p>Développeur front-end </p>
+                    <p>Développeur Front-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#">CV</a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="#" class="liens-reseaux">CV</a>
                     </div>
-                    <p>Geoffroy Carette</p> 
+                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -139,13 +137,13 @@ Template Name: Équipe
                     <p class="d-flex justify-content-center">Ibrahim Sow</p>
                 </div>
                 <div class="back d-flex flex-column justify-content-center align-items-center">
-                    <p>Développeur front-end </p>
+                    <p>Développeur Front-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#">CV</a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="#" class="liens-reseaux">CV</a>
                     </div>
-                    <p>Ibrahim Sow</p> 
+                        <a href="#" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -156,13 +154,13 @@ Template Name: Équipe
                     <p class="d-flex justify-content-center">Jeanne Thibert </p>
                 </div>
                 <div class="back d-flex flex-column justify-content-center align-items-center">
-                    <p>Développeur front-end </p>
+                    <p>Développeur Front-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#">CV</a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="#" class="liens-reseaux">CV</a>
                     </div>
-                   <p>Jeanne Thibert</p> 
+                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -173,13 +171,13 @@ Template Name: Équipe
                     <p class="d-flex justify-content-center">Jules Pageaux </p>
                 </div>
                 <div class="back d-flex flex-column justify-content-center align-items-center">
-                    <p>Développeur back-end </p>
+                    <p>Développeur Full-stack</p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#">CV</a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="#" class="liens-reseaux">CV</a>
                     </div>
-                   <p>Jules Pageaux</p> 
+                    <a href="#" class="lien-portfolio">Voir le Portfolio</a> 
                 </div>
             </div>
         </div>
@@ -190,13 +188,13 @@ Template Name: Équipe
                     <p class="d-flex justify-content-center">Lucas Robin </p>
                 </div>
                 <div class="back d-flex flex-column justify-content-center align-items-center">
-                    <p>Développeur full-stack </p>
+                    <p>Développeur Back-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#">CV</a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="#" class="liens-reseaux">CV</a>
                     </div>
-                    <p>Lucas Robin</p> 
+                    <a href="#" class="lien-portfolio">Voir le Portfolio</a> 
                 </div>
             </div>
         </div>
@@ -207,27 +205,42 @@ Template Name: Équipe
                     <p class="d-flex justify-content-center">Valérie Honoré </p>
                 </div>
                 <div class="back d-flex flex-column justify-content-center align-items-center">
-                    <p>Développeur back-end </p>
+                    <p>Développeur Back-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#">CV</a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="#" class="liens-reseaux">CV</a>
                     </div>
-                    <p>Valérie Honoré</p> 
+                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
     </div>
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <img class="img-fluid image--cover" src="../../../gravit/photo/manu.jpg" alt="manu">
-                <p class="d-flex justify-content-center m-0">Emmanuel Bailly-Salin</p>
-                <p class="d-flex justify-content-center">Formateur</p>
-                
+    <div class="container-fluid manu">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="flip-container d-flex justify-content-center align-items-center">
+                <div class="flipper profil info-manu">
+                    <div class="front d-flex flex-column justify-content-center align-items-center">
+                        <img class="img-fluid image--cover" src="../../../gravit/photo/manu.jpg" alt="manu">
+                        <p class="d-flex justify-content-center m-0">Emmanuel Bailly-Salin</p>
+                    </div>
+                    <div class="back d-flex flex-column justify-content-center align-items-center">
+                        <p>Formateur</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                            <a href="#" class="liens-reseaux"><i class="fab fa-gitlab"></i></a>
+                        </div>
+                        <a href="#" class="lien-portfolio">Access Code School</a>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+</section>
 <!-- 
     
 -->
-</section>
 <section class="container-fluid section-galerie d-flex flex-column justify-content-center align-items-center">
     <h1>Galerie</h1>
     <div class="mt-5 d-flex flex-wrap">
