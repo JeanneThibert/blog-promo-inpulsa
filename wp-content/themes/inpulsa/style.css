@@ -145,12 +145,6 @@
     -o-object-position: center;
     object-position: center;
     border: 2px solid rgba(134, 134, 134, 0.507); }
-  .section-membre .text-inpulsa {
-    width: 200px;
-    height: 200px;
-    line-height: 200px;
-    font-size: 3rem;
-    font-family: 'Amita', sans-serif; }
   .section-membre .flip-container {
     perspective: 1000px;
     margin-bottom: 3vh; }
@@ -223,6 +217,64 @@
 .section-galerie h1 {
   font-size: 4rem;
   font-weight: 700; }
+.section-galerie .image--cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  border: 2px solid rgba(51, 37, 74, 0.486); }
+.section-galerie .text-inpulsa {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  font-family: 'Amita';
+  font-size: 2rem; }
+.section-galerie .team-membre {
+  font-family: 'Proza Libre ', sans-serif; }
+.section-galerie #portfolio {
+  margin: 1rem 0;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  -webkit-column-width: 33.33333333333333%;
+  -moz-column-width: 33.33333333333333%;
+  column-width: 33.33333333333333%; }
+.section-galerie .tile {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease; }
+.section-galerie .scale-anm {
+  transform: scale(1); }
+.section-galerie .tile img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem; }
+.section-galerie .button {
+  cursor: pointer;
+  padding: .5rem 1rem;
+  margin: 0;
+  height: auto;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  color: #555;
+  background-color: transparent; }
+.section-galerie .button:hover {
+  text-decoration: underline;
+  color: #33254A; }
+.section-galerie ::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
 
 .img_header_article {
   background: url("../../../gravit/fond_maquette_final_filtre.svg") no-repeat center;
