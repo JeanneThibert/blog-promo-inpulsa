@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
     
+<<<<<<< HEAD
     // $("h1").css('color', "#f00")
     // MENU GALLERY
 
@@ -23,6 +24,15 @@ $("#portfolio").fadeTo(300, 1);
 });
    
 
+=======
+    // $("h1").css('color', "#f00");
+    $(".profil").click(function(){
+        $(this).toggleClass('turn');
+    });
+
+});
+
+>>>>>>> 899f7c35b16105134080760edf79e2fc08fd7936
 
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -81,6 +91,23 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+<<<<<<< HEAD
 
 
 
+=======
+// Funtiion pour les images
+$(function() {
+    var selectedClass = "";
+    $(".fil-cat").click(function(){ 
+    selectedClass = $(this).attr("data-rel"); 
+ $("#portfolio").fadeTo(100, 0.1);
+    $("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+setTimeout(function() {
+  $("."+selectedClass).fadeIn().addClass('scale-anm');
+  $("#portfolio").fadeTo(300, 1);
+}, 300); 
+    
+});
+});
+>>>>>>> 899f7c35b16105134080760edf79e2fc08fd7936

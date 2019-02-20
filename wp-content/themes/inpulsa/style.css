@@ -1,378 +1,88 @@
-.wallpaperheader {
-  background: url(assets/completecontactpage.jpeg);
-  background-repeat: no-repeat;
-  height: 70vh; }
+/*
+Error: Invalid CSS after "border: 0": expected "{", was ";"
+        on line 278 of _equipe.scss
+        from line 2 of style.scss
 
-.editcontacttitle {
-  color: white;
-  font-size: 4rem;
-  height: 70vh; }
+273: box-shadow: 0 0 0 3px var(--darken-3);
+274: }
+275: 
+276: ::-moz-focus-inner {
+277: <<<<<<< HEAD
+278: border: 0;
+279: padding: 0;
+280: }
+281: 
+282: .gallerie:hover{
+283:   opacity:0.5;
 
-.edittitleform {
-  color: slategrey;
-  margin-top: 8vh;
-  font-size: 4vh; }
-
-.formulaire {
-  margin-top: 100px; }
-
-.contact-form {
-  list-style-type: none; }
-  .contact-form li div {
-    margin-bottom: 2.5em; }
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form select {
-    width: 100%;
-    margin: 0;
-    padding-bottom: 1.4em;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
-    border-bottom: 2px solid slategrey;
-    background: #FFFFFFF;
-    font-family: 'Roboto', sans-serif;
-    color: slategrey;
-    font-weight: 500;
-    font-size: 20px;
-    transition: ease-in-out 1.00s; }
-  .contact-form textarea {
-    min-height: 50px;
-    max-height: 500px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    resize: vertical;
-    overflow: hidden; }
-  .contact-form ::-webkit-input-placeholder {
-    font-size: 12px;
-    color: slategrey;
-    text-transform: uppercase;
-    font-weight: 400;
-    display: flex;
-    text-align: center; }
-  .contact-form label {
-    font-size: 12px;
-    color: slategrey;
-    text-transform: uppercase;
-    font-weight: 400; }
-  .contact-form input:focus,
-  .contact-form select:focus,
-  .contact-form textarea:focus,
-  .contact-form button:focus {
-    outline: none;
-    resize: none;
-    border-bottom: 3px solid #8400ff; }
-  .contact-form #slider-range-min {
-    outline: 0;
-    background: slategrey;
-    height: 3.6em;
-    border: 0;
-    border-radius: 0; }
-    .contact-form #slider-range-min .ui-slider-range {
-      background: #8400ff;
-      border-radius: 0; }
-    .contact-form #slider-range-min .ui-slider-handle {
-      outline: 0;
-      top: 1.1em;
-      margin-left: -.6em;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      border: 0;
-      background: white;
-      cursor: pointer; }
-  .contact-form #amount {
-    border: 0;
-    color: slategrey;
-    font-weight: 400;
-    font-size: 12px;
-    padding-top: 1.1em;
-    letter-spacing: 3px; }
-  .contact-form button {
-    border-radius: 10px;
-    color: slategrey;
-    background: rgba(34, 34, 34, 0);
-    border: 3px solid #8400ff;
-    height: 70px;
-    width: 150px;
-    float: right;
-    font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: ease-in-out 0.25s; }
-    .contact-form button span {
-      transition: ease-in-out 0.25s; }
-  .contact-form button:hover {
-    background: #8400ff;
-    color: white; }
-    .contact-form button:hover span {
-      padding-left: 10px;
-      color: white; }
-
-.size-form {
-  width: 350px;
-  margin-left: 368px; }
-
-#map {
-  height: 100vh;
-  width: 100%; }
-
-.toolbar {
-  margin: 100px auto 0; }
-
-.choice {
-  color: #000;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-  display: table-cell;
-  position: relative;
-  padding: 15px 0;
-  display: inline-block;
-  padding: 15px 20px;
-  position: relative; }
-
-.choice:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #000;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0; }
-
-.choice:hover:after {
-  width: 100%;
-  left: 0; }
-
-@media screen and (max-height: 300px) {
-  .toolbar {
-    margin-top: 40px; } }
-#portfolio {
-  font-family: 'Proza Libre ', sans-serif;
-  margin: 1rem 0;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-gap: 1rem;
-  -moz-column-gap: 1rem;
-  column-gap: 1rem;
-  -webkit-column-width: 33.33333333333333%;
-  -moz-column-width: 33.33333333333333%;
-  column-width: 33.33333333333333%; }
-
-.tile {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease; }
-
-.scale-anm {
-  transform: scale(1); }
-
-p {
-  padding: 10px;
-  border-bottom: 1px #ccc dotted;
-  text-decoration: none;
-  font-family: lato;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #333;
-  display: block;
-  float: left; }
-
-p:hover {
-  cursor: pointer;
-  background: #333;
-  color: #eee; }
-
-.tile img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  margin-bottom: 1rem; }
-
-.choice {
-  font-size: 1rem;
-  font-weight: normal;
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  line-height: normal;
-  padding: .5rem 1rem;
-  margin: 0;
-  height: auto;
-  vertical-align: middle;
-  -webkit-appearance: none;
-  color: #555;
-  background-color: transparent; }
-
-.choice:hover {
-  text-decoration: none; }
-
-.choice:focus {
-  outline: none;
-  border-color: var(--darken-2);
-  box-shadow: 0 0 0 3px var(--darken-3); }
-
-::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-.gallerie:hover {
-  opacity: 0.5;
-  transition: opacity 0.3s linear; }
-
-.img_header_article {
-  background: url("../../../gravit/fond_maquette_final_filtre.svg") no-repeat center;
-  height: 60vh;
-  background-size: cover; }
-
-.texte {
-  color: white;
-  font-size: 60px;
-  text-align: center;
-  font-family: 'Proza Libre', sans-serif; }
-
-.search-container {
-  width: 300px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 120px;
-  margin-inline-end: 5px; }
-
-input#search-bar {
-  margin: 0 auto;
-  width: 100%;
-  height: 45px;
-  padding: 0 20px;
-  font-size: 1rem;
-  border: 1px solid #D0CFCE;
-  outline: none;
-  top: 80vh; }
-  input#search-bar:focus {
-    border: 1px solid #33254A;
-    transition: 0.35s ease;
-    color: black; }
-    input#search-bar:focus::-webkit-input-placeholder {
-      transition: opacity 0.45s ease;
-      opacity: 0; }
-    input#search-bar:focus::-moz-placeholder {
-      transition: opacity 0.45s ease;
-      opacity: 0; }
-    input#search-bar:focus:-ms-placeholder {
-      transition: opacity 0.45s ease;
-      opacity: 0; }
-
-.search-icon {
-  position: relative;
-  float: right;
-  width: 75px;
-  height: 75px;
-  top: -62px;
-  right: -15px; }
-
-.nav-pc {
-  position: absolute;
-  top: 0vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-family: 'Quicksand', sans-serif; }
-  .nav-pc a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0px 30px;
-    font-size: 1.5rem;
-    font-weight: 400;
-    transition: .2s; }
-    .nav-pc a:hover {
-      transform: translateY(-4px);
-      color: #c0c0c0; }
-  .nav-pc img {
-    height: 140px;
-    transition: .82s; }
-    .nav-pc img:hover {
-      transform: translateY(4px) scale(0.95) rotateZ(-20deg); }
-
-footer {
-  background-color: #1E1E1E;
-  color: #fff;
-  padding: 5vh 5vw !important;
-  font-family: 'Quicksand', sans-serif; }
-  footer .text-apropos {
-    width: 70% !important; }
-  footer .lien-hover {
-    color: #7b7b7b; }
-    footer .lien-hover:hover {
-      color: #fff;
-      text-decoration: none; }
-  footer .icones i {
-    font-size: 3rem;
-    margin: 2.5vw;
-    color: #7b7b7b;
-    transition: .1s; }
-    footer .icones i:hover {
-      color: #fff;
-      transform: scale(1.1) translateY(-3px); }
-
-.copyright {
-  background-color: #171717;
-  padding: 4vh; }
-  .copyright p {
-    margin: 0 !important;
-    color: #848484; }
-
-.section-accueil {
-  height: 100vh;
-  background: url(../../../gravit/bg-accueil.jpeg);
-  background-position: center;
-  background-size: cover;
-  font-family: 'Proza Libre', sans-serif; }
-  .section-accueil h1 {
-    font-size: 4rem;
-    font-weight: 700; }
-  .section-accueil a {
-    text-decoration: none;
-    color: #fff; }
-
-.section-presentation {
-  padding: 10vh;
-  margin-top: -10vh;
-  z-index: 1000;
-  position: relative;
-  background-color: #33254A;
-  color: #fff;
-  box-shadow: 5px -4px 20px #0000007a;
-  font-family: 'Quicksand', sans-serif; }
-  .section-presentation h2 {
-    letter-spacing: 10px;
-    font-size: 2.3rem; }
-  .section-presentation hr {
-    border-top: 1px solid #fff;
-    width: 20%;
-    transform: rotate(90deg);
-    margin-top: 7vh;
-    margin-bottom: 10vh; }
-  .section-presentation p {
-    text-align: justify; }
-
-.img-codeur {
-  height: 50vh;
-  background: url(../../../gravit/team.jpeg);
-  background-position: center;
-  background-size: cover;
-  margin-top: -10vh; }
-
-.section-projet {
-  padding: 10vh; }
-  .section-projet h4 {
-    font-size: 2.5rem;
-    font-weight: 700; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+_equipe.scss:278
+style.scss:2
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1137:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1132:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:665:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:674:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:658:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:684:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:125:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:312:in `to_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:88:in `block in with_import'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:88:in `with_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:325:in `visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
+/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"border: 0\": expected \"{\", was \";\"\A         on line 278 of _equipe.scss\A         from line 2 of style.scss\A \A 273: box-shadow: 0 0 0 3px var(--darken-3);\A 274: }\A 275: \A 276: ::-moz-focus-inner {\A 277: <<<<<<< HEAD\A 278: border: 0;\A 279: padding: 0;\A 280: }\A 281: \A 282: .gallerie:hover{\A 283:   opacity:0.5;"; }

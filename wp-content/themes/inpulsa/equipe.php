@@ -162,7 +162,10 @@ Template Name: Équipe
     <div style="clear:both;"></div>
 </section>
 
+    <div style="clear:both;"></div>   
+    </section>
 
+</section>
 
 
 
