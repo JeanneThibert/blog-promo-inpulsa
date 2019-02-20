@@ -1,8 +1,28 @@
 jQuery(document).ready(function($){
     
-    // $("h1").css('color', "#f00");
-   
+    // $("h1").css('color', "#f00")
+    // MENU GALLERY
+
+
 });
+
+var selectedClass = "";
+$(".fil-cat").click(function(){ 
+    console.log("fil-cat");
+selectedClass = $(this).attr("data-rel"); 
+console.log("data-rel");
+$("#portfolio").fadeTo(100, 0.1);
+console.log("portfolio");
+$("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+setTimeout(function() {
+$("."+selectedClass).fadeIn().addClass('scale-anm');
+console.log("scale-anm");
+$("#portfolio").fadeTo(300, 1);
+}, 300); 
+
+});
+   
+
 
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -61,17 +81,6 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-// Funtiion pour les images
-$(function() {
-    var selectedClass = "";
-    $(".fil-cat").click(function(){ 
-    selectedClass = $(this).attr("data-rel"); 
- $("#portfolio").fadeTo(100, 0.1);
-    $("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
-setTimeout(function() {
-  $("."+selectedClass).fadeIn().addClass('scale-anm');
-  $("#portfolio").fadeTo(300, 1);
-}, 300); 
-    
-});
-});
+
+
+
