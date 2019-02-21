@@ -371,7 +371,7 @@ Begin: Running /scripts/init-bottom ... done.
 [    9.324613] systemd[1]: Detected virtualization oracle.
 [    9.346623] systemd[1]: Detected architecture x86-64.
 
-Welcome to [1mUbuntu 18.04.1 LTS[0m!
+Welcome to [1mUbuntu 18.04.2 LTS[0m!
 
 [    9.435997] systemd[1]: Set hostname to <ubuntu-bionic>.
 [    9.613626] random: crng init done
@@ -416,13 +416,17 @@ Welcome to [1mUbuntu 18.04.1 LTS[0m!
 [[0;32m  OK  [0m] Listening on Journal Audit Socket.
          Starting Journal Service...
 [[0;32m  OK  [0m] Started Uncomplicated firewall.
+[   44.974034] systemd[1]: Started Create list of required static device nodes for the current kernel.
 [[0;32m  OK  [0m] Started Create list of required sta…vice nodes for the current kernel.
+[   44.990566] systemd[1]: Starting Create Static Device Nodes in /dev...
          Starting Create Static Device Nodes in /dev...
+[   45.056510] systemd[1]: Started udev Coldplug all Devices.
 [[0;32m  OK  [0m] Started udev Coldplug all Devices.
 [[0;32m  OK  [0m] Started Journal Service.
 [[0;32m  OK  [0m] Started Create Static Device Nodes in /dev.
 [   14.276625] iscsi: registered transport (iser)
-[[0;32m  OK  [0m] Started Load Kernel Modules.[   14.392506] EXT4-fs (sda1): re-mounted. Opts: (null)
+[[0;32m  OK  [0m] Started Load Kernel Modules.
+[   14.392506] EXT4-fs (sda1): re-mounted. Opts: (null)
 
 [[0;32m  OK  [0m] Mounted Kernel Debug File System.
 [[0;32m  OK  [0m] Mounted POSIX Message Queue File System.
@@ -451,6 +455,7 @@ Welcome to [1mUbuntu 18.04.1 LTS[0m!
 [[0;32m  OK  [0m] Started Apply Kernel Variables.
 [[0;32m  OK  [0m] Started Set console font and keymap.
 [[0;32m  OK  [0m] Started Tell Plymouth To Write Out Runtime Data.
+[[0;32m  OK  [0m] Started ebtables ruleset management.
 [[0;32m  OK  [0m] Started udev Kernel Device Manager.
 [[0;32m  OK  [0m] Started Dispatch Password Requests to Console Directory Watch.
 [[0;32m  OK  [0m] Reached target Local Encrypted Volumes.
@@ -502,6 +507,7 @@ Welcome to [1mUbuntu 18.04.1 LTS[0m!
 [   30.905047] cloud-init[691]: ci-info: |   4   |   ff00::/8  |    ::   |   enp0s3  |   U   |
 [   30.911923] cloud-init[691]: ci-info: +-------+-------------+---------+-----------+-------+
 [[0;32m  OK  [0m] Started Initial cloud-init job (metadata service crawler).
+[[0;32m  OK  [0m] Reached target Cloud-config availability.
 [[0;32m  OK  [0m] Reached target System Initialization.
 [[0;32m  OK  [0m] Started Clean PHP session files every 30 mins.
 [[0;32m  OK  [0m] Started Daily apt download activities.
@@ -522,9 +528,8 @@ Welcome to [1mUbuntu 18.04.1 LTS[0m!
          Starting Availability of block devices...
 [[0;32m  OK  [0m] Reached target Remote File Systems (Pre).
 [[0;32m  OK  [0m] Reached target Remote File Systems.
-[[0;32m  OK  [0m] Reached target Cloud-config availability.
-[[0;32m  OK  [0m] Listening on Socket activation for snappy daemon.
 [[0;32m  OK  [0m] Listening on LXD - unix socket.
+[[0;32m  OK  [0m] Listening on Socket activation for snappy daemon.
 [[0;32m  OK  [0m] Started Availability of block devices.
 [[0;32m  OK  [0m] Reached target Sockets.
 [[0;32m  OK  [0m] Reached target Basic System.
@@ -547,6 +552,11 @@ Welcome to [1mUbuntu 18.04.1 LTS[0m!
 [[0;32m  OK  [0m] Started Deferred execution scheduler.
          Starting MariaDB 10.3.12 database server...
          Starting Snappy daemon...
+[[0;32m  OK  [0m] Started FUSE filesystem for LXC.
+         Starting The Apache HTTP Server...
+         Starting MariaDB 10.3.12 database server...
+         Starting Accounts Service...
+         Starting LXD - container startup/shutdown...
 [[0;32m  OK  [0m] Started System Logging Service.
 [[0;32m  OK  [0m] Started Permit User Sessions.
 [[0;32m  OK  [0m] Started Login Service.
@@ -573,8 +583,9 @@ Welcome to [1mUbuntu 18.04.1 LTS[0m!
 [[0;32m  OK  [0m] Started Accounts Service.
 [[0;32m  OK  [0m] Started Session 1 of user vagrant.
          Starting User Manager for UID 1000...
-
-Ubuntu 18.04.1 LTS ubuntu-bionic ttyS0
+
+
+Ubuntu 18.04.2 LTS ubuntu-bionic ttyS0
 
 ubuntu-bionic login: [   47.391126] cloud-init[1400]: Cloud-init v. 18.4-0ubuntu1~18.04.1 running 'modules:config' at Thu, 21 Feb 2019 09:26:34 +0000. Up 45.32 seconds.
 [   64.339937] cloud-init[1829]: Cloud-init v. 18.4-0ubuntu1~18.04.1 running 'modules:final' at Thu, 21 Feb 2019 09:26:52 +0000. Up 63.02 seconds.
