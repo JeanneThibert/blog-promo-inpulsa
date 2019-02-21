@@ -31,6 +31,43 @@ $("#portfolio").fadeTo(300, 1);
 
 });
    
+// function pour loupe sur image page équipe
+var modal = document.getElementById('demo-modal');
+var img = document.querySelector('loupe');
+var bigimg = document.querySelector('big');
+var modalImg = document.getElementById('modal-img');
+var captionText = document.getElementById('caption');
+
+// for( i = 0 ; i < img.length; i++ ){
+//     if(img.options[i].selected){
+// img.addEventListener('click', function(e){
+    
+//     modal.style.display = "block";
+//     modalImg.src = bigimg.src;
+//     modalImg.alt = bigimg.alt;
+//     captionText.innerHTML = bigimg.alt;
+//     console.log('coucou');
+// })
+// }
+// };
+
+
+
+img.onclick = function() {
+    console.log('loupe');
+    console.log('big');
+  modal.style.display = "block";
+  modalImg.src = bigimg.src;
+  modalImg.alt = bigimg.alt;
+  captionText.innerHTML = bigimg.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
 
 
 
@@ -91,29 +128,7 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
 
-=======
-// Funtiion pour les images
-$(function() {
-    var selectedClass = "";
-    $(".fil-cat").click(function(){ 
-    selectedClass = $(this).attr("data-rel"); 
- $("#portfolio").fadeTo(100, 0.1);
-    $("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
-setTimeout(function() {
-  $("."+selectedClass).fadeIn().addClass('scale-anm');
-  $("#portfolio").fadeTo(300, 1);
-}, 300); 
-    
-});
-});
->>>>>>> 899f7c35b16105134080760edf79e2fc08fd7936
-=======
 
-
-
->>>>>>> 192914194f986b28713170064864e6f3ac2fbcdb

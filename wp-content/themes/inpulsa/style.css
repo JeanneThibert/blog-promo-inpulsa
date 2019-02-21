@@ -125,6 +125,14 @@
   background-position: center;
   background-size: cover; }
 
+.title-membre {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Proza Libre' , sans-serif; }
+
+.font-equipe {
+  font-family: 'Quicksand'; }
+
 .section-membre {
   padding: 10vh 15vw;
   /* flip speed goes here */
@@ -155,17 +163,21 @@
   .section-membre .manu .info-manu {
     width: 250px;
     height: 250px; }
-  .section-membre .manu .front, .section-membre .manu .back {
+  .section-membre .manu .front,
+  .section-membre .manu .back {
     width: 250px;
     height: 250px; }
-  .section-membre .flip-container, .section-membre .front, .section-membre .back {
+  .section-membre .flip-container,
+  .section-membre .front,
+  .section-membre .back {
     width: 100%;
     height: 250px; }
   .section-membre .flipper {
     transition: .8s;
     transform-style: preserve-3d;
     position: relative; }
-  .section-membre .front, .section-membre .back {
+  .section-membre .front,
+  .section-membre .back {
     backface-visibility: hidden;
     position: absolute;
     top: 0;
@@ -214,24 +226,31 @@
       font-size: 1.3rem;
       margin: 0 !important; }
 
-.section-galerie h1 {
-  font-size: 4rem;
-  font-weight: 700; }
-.section-galerie .image--cover {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-  border: 2px solid rgba(51, 37, 74, 0.486); }
-  .section-galerie .image--cover .toolbar {
+.section-galerie {
+  /* The Modal (background) */
+  /* Modal Content (image) */
+  /* Caption of Modal Image */
+  /* Add Animation */
+  /* The Close Button */
+  /* 100% Image Width on Smaller Screens */ }
+  .section-galerie h1 {
+    font-size: 4rem;
+    font-weight: 700; }
+  .section-galerie .image--cover {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    border: 2px solid rgba(51, 37, 74, 0.486); }
+  .section-galerie .toolbar {
     margin: 100px auto 0; }
-  .section-galerie .image--cover .choice {
+  .section-galerie .choice {
     color: #000;
     text-transform: uppercase;
     text-decoration: none;
@@ -239,10 +258,12 @@
     display: table-cell;
     position: relative;
     padding: 15px 0;
+    font-size: initial;
     display: inline-block;
     padding: 15px 20px;
-    position: relative; }
-  .section-galerie .image--cover .choice:after {
+    position: relative;
+    font-family: 'Quicksand'; }
+  .section-galerie .choice:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -253,13 +274,13 @@
     background: #000;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0; }
-  .section-galerie .image--cover .choice:hover:after {
+  .section-galerie .choice:hover:after {
     width: 100%;
     left: 0; }
   @media screen and (max-height: 300px) {
-    .section-galerie .image--cover .toolbar {
+    .section-galerie .toolbar {
       margin-top: 40px; } }
-  .section-galerie .image--cover #portfolio {
+  .section-galerie #portfolio {
     font-family: 'Proza Libre ', sans-serif;
     margin: 1rem 0;
     -webkit-column-count: 3;
@@ -271,14 +292,14 @@
     -webkit-column-width: 33.33333333333333%;
     -moz-column-width: 33.33333333333333%;
     column-width: 33.33333333333333%; }
-  .section-galerie .image--cover .tile {
+  .section-galerie .tile {
     -webkit-transform: scale(0);
     transform: scale(0);
     -webkit-transition: all 350ms ease;
     transition: all 350ms ease; }
-  .section-galerie .image--cover .scale-anm {
+  .section-galerie .scale-anm {
     transform: scale(1); }
-  .section-galerie .image--cover p {
+  .section-galerie p {
     padding: 10px;
     border-bottom: 1px #ccc dotted;
     text-decoration: none;
@@ -288,16 +309,16 @@
     color: #333;
     display: block;
     float: left; }
-  .section-galerie .image--cover p:hover {
+  .section-galerie p:hover {
     cursor: pointer;
     background: #333;
     color: #eee; }
-  .section-galerie .image--cover .tile img {
+  .section-galerie .tile img {
     max-width: 100%;
     width: 100%;
     height: auto;
     margin-bottom: 1rem; }
-  .section-galerie .image--cover .choice {
+  .section-galerie .choice {
     font-size: 1rem;
     font-weight: normal;
     text-decoration: none;
@@ -311,18 +332,128 @@
     -webkit-appearance: none;
     color: #555;
     background-color: transparent; }
-  .section-galerie .image--cover .choice:hover {
+  .section-galerie .choice:hover {
     text-decoration: none; }
-  .section-galerie .image--cover .choice:focus {
+  .section-galerie .choice:focus {
     outline: none;
     border-color: var(--darken-2);
     box-shadow: 0 0 0 3px var(--darken-3); }
-  .section-galerie .image--cover ::-moz-focus-inner {
+  .section-galerie ::-moz-focus-inner {
     border: 0;
     padding: 0; }
-  .section-galerie .image--cover .gallerie:hover {
-    opacity: 0.5;
-    transition: opacity 0.3s linear; }
+  .section-galerie .content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden; }
+  .section-galerie .content .content-overlay {
+    background: rgba(255, 255, 255, 0.712);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s; }
+  .section-galerie .content:hover .content-overlay {
+    opacity: 0.8; }
+  .section-galerie .content-image {
+    width: 100%; }
+  .section-galerie .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s; }
+  .section-galerie .content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1; }
+  .section-galerie .content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase; }
+  .section-galerie .fadeIn-right {
+    left: 80%; }
+  .section-galerie .loupe {
+    width: 50px !important; }
+  .section-galerie .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background: black;
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */ }
+  .section-galerie .modal-content {
+    margin: 0 auto;
+    margin-top: 10%;
+    display: block;
+    width: 80%;
+    max-width: 700px; }
+  .section-galerie #caption {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px; }
+  .section-galerie .modal-content,
+  .section-galerie #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s; }
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+  .section-galerie .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s; }
+  .section-galerie .close:hover,
+  .section-galerie .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer; }
+  @media only screen and (max-width: 700px) {
+    .section-galerie .modal-content {
+      width: 100%; } }
 
 .img_header_article {
   background: url("../../../gravit/fond_maquette_final_filtre.svg") no-repeat center;
