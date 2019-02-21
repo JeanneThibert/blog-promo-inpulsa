@@ -152,3 +152,5 @@ function new_excerpt_more($more) {
     return $excerpt;
     }
     add_filter( 'the_excerpt', 'the_excerpt_more_link', 21 );
+
+    

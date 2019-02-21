@@ -1,20 +1,99 @@
-.image--cover {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-    border: 2px solid rgba(51, 37, 74, 0.486) ;
-
+.page-membre{
+    height: 50vh;
+    background: url(../../../gravit/bg-accueil.jpeg);
+    background-position: center;
+    background-size: cover;
 }
+.section-membre{
+    padding: 10vh 20vw;
+    .image--cover {
+        width: 200px;
+        height: 200px;
+        min-height: 200px;
+        min-width: 200px;
+        border-radius: 50%;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+        border: 2px solid rgba(134, 134, 134, 0.507) ;
 
-.text-inpulsa{
-    width:200px;
-height:200px;
-line-height:200px; 
+    }
+
+    .text-inpulsa{
+        width:200px;
+        height:200px;
+        line-height:200px; 
+        font-size: 3rem;
+        font-family: 'Amita', sans-serif;
+    }
+    .flip-container {
+        perspective: 1000;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            filter: FlipH;
+        }
+
+    .flip-container, .front, .back {
+        width: 250px;
+        height: 250px;    
+      
+    }
+
+    .flipper {
+        -webkit-transition: 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transition: 0.6s;
+        -moz-transform-style: preserve-3d;
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+    .front, .back {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;top: 0;left: 0;
+    }
+
+    .front {
+        z-index: 2;
+    }
+    .back {
+        background: linear-gradient(#bdc3c7, #2c3e50);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        border-radius: 50%;
+        // border: 2px solid rgba(134, 134, 134, 0.507) ;
+        a{
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 2.5rem;
+            transition: .1s;
+            &:hover{
+                transform: scale(1.15) translateY(-3px);
+                color: rgb(0, 163, 228);
+            }
+        }
+        p{
+            color: #fff;
+            font-size: 1.2rem;
+        }
+    }
+}
+.section-galerie{
+    h1{
+        font-size: 4rem;
+        font-weight: 700;
+    }
 }
