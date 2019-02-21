@@ -3,13 +3,15 @@
 Template Name: articles
 */
 
+?>
 
 
 
 
 
- get_header(); ?>
- 
+<?php get_header(); ?>
+
+
  <div class="img_header_article container-fluid d-flex justify-content-center align-items-center m-0 p-0">
      <div class="texte">Articles de veille<br>
       technologique</div>
@@ -30,7 +32,7 @@ Template Name: articles
 
         <?php  while(have_posts()): the_post(); ?>
 
-        <?php echo $post->post_title; ?>
+        
 
         <?php get_template_part('content'); ?>
 
@@ -56,6 +58,7 @@ Template Name: articles
             
     </div>
 </section>
+
 
 <?php get_footer(); ?>
 
