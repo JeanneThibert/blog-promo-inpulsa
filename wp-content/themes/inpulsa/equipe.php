@@ -241,7 +241,7 @@ Template Name: Équipe
 <!-- 
     
 -->
-<section  class="section-galerie">
+<section  class="section-galerie" id="galerie">
     <section class="container">
         <div class="toolbar pb-5 pt-5">
             <h1 class="team-membre d-flex justify-content-center pb-5">Galeries</h1>

@@ -58,7 +58,7 @@
 <header class="d-flex justify-content-center align-items-center">
     <nav class="container-fluid nav-pc d-flex justify-content-center align-items-center">
         <a href="http://localhost:8080/lequipe" class="liens">Membres</a>
-        <a href="http://localhost:8080/lequipe" class="liens">Galerie</a>
+        <a href="http://localhost:8080/lequipe#galerie" class="liens">Galerie</a>
         <a href="http://localhost:8080/"><img src="../../../gravit/logo-blanc.png" alt="logo"></a>
         <a href="articles" class="liens">Articles</a>
         <a href="contact" class="liens">Contact</a>
