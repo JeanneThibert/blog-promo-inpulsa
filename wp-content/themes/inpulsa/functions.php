@@ -149,16 +149,3 @@ function inpulsa_give_me_meta_01($date1, $date2, $cat) {
 
 }
 
-function new_excerpt_more($more) {
-    return '';
-    }
-    add_filter('excerpt_more', 'new_excerpt_more', 21 );
-    
-    function the_excerpt_more_link( $excerpt ){
-    $post = get_post();
-    $excerpt .= '<a href="'. get_permalink($post->ID) . '">Lire la suite</a>.';
-    return $excerpt;
-    }
-    add_filter( 'the_excerpt', 'the_excerpt_more_link', 21 );
-
-    

@@ -138,3 +138,39 @@ footer{
         font-weight: 700;
     }
 }
+.pagination{
+
+    height: 25vh;
+.wp-pagenavi {
+    clear: both;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	text-decoration: none;
+    color: #5d5d5d;
+	padding: 5px 15px;
+    margin: 2px;
+   
+}
+.wp-pagenavi a{
+    transition: .2s;
+    &:hover{
+        color: skyblue;
+        font-weight: bold;
+    }
+}
+.wp-pagenavi .previouspostslink, .nextpostslink {
+    // border: 1px solid #BFBFBF;
+    background-color: #d4d4d4;
+    color: #5d5d5d;
+    border-radius: 7%;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	border-color: #000;
+}
+
+.wp-pagenavi span.current {
+	font-weight: bold;
+}
+}
