@@ -11,6 +11,7 @@ function inpulsa_scripts(){
 
     //chargement des js
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), INPULSA_VERSION, true );
+    // wp_enqueue_script( 'inpulsa_admin_script', get_template_directory_uri() . '/js/leaflet.js', array('jquery', 'bootstrap-js'), INPULSA_VERSION, true );
     wp_enqueue_script( 'inpulsa_admin_script', get_template_directory_uri() . '/js/inpulsa.js', array('jquery', 'bootstrap-js'), INPULSA_VERSION, true );
 
 }
