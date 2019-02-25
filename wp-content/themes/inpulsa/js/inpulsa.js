@@ -1,8 +1,75 @@
 jQuery(document).ready(function($){
     
+    // $("h1").css('color', "#f00")
+    // MENU GALLERY
+
+
     // $("h1").css('color', "#f00");
-   
+    $(".profil").click(function(){
+        $(this).toggleClass('turn');
+    });
+
+
 });
+
+    // $("h1").css('color', "#f00")
+    // MENU GALLERY
+
+var selectedClass = "";
+$(".fil-cat").click(function(){ 
+    console.log("fil-cat");
+selectedClass = $(this).attr("data-rel"); 
+console.log("data-rel");
+$("#portfolio").fadeTo(100, 0.1);
+console.log("portfolio");
+$("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+setTimeout(function() {
+$("."+selectedClass).fadeIn().addClass('scale-anm');
+console.log("scale-anm");
+$("#portfolio").fadeTo(300, 1);
+}, 300); 
+
+});
+   
+// function pour loupe sur image page équipe
+var modal = document.getElementById('demo-modal');
+var img = document.querySelector('loupe');
+var bigimg = document.querySelector('big');
+var modalImg = document.getElementById('modal-img');
+var captionText = document.getElementById('caption');
+
+// for( i = 0 ; i < img.length; i++ ){
+//     if(img.options[i].selected){
+// img.addEventListener('click', function(e){
+    
+//     modal.style.display = "block";
+//     modalImg.src = bigimg.src;
+//     modalImg.alt = bigimg.alt;
+//     captionText.innerHTML = bigimg.alt;
+//     console.log('coucou');
+// })
+// }
+// };
+
+
+
+// img.onclick = function() {
+//     console.log('loupe');
+//     console.log('big');
+//   modal.style.display = "block";
+//   modalImg.src = bigimg.src;
+//   modalImg.alt = bigimg.alt;
+//   captionText.innerHTML = bigimg.alt;
+// }
+
+// // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() { 
+//   modal.style.display = "none";
+// }
+
+
 
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -60,3 +127,8 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+
+
+
+

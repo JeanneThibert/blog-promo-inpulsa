@@ -1,6 +1,13 @@
 
 <?php get_header(); ?>
 
+
+<div class="img_header_article container-fluid d-flex justify-content-center align-items-center m-0 p-0">
+     <div class="texte">
+     <h1><?php the_title(); ?></h1>
+     </div>
+</div> 
+
 <section>
     <div class="container">
 
@@ -50,6 +57,8 @@
         ?>
     </div>
 </section>
+
+
 
 <?php get_footer(); ?>
 
