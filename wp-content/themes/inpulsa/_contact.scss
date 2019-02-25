@@ -4,8 +4,8 @@
 .wallpaperheader {
     background: url(assets/completecontactpage.jpeg);
     background-repeat: no-repeat;
-    height: 70vh;
 }
+
 
 // EDITION DU TITRE CONTACT
 
@@ -14,6 +14,8 @@
     font-size: 4rem;
     height: 70vh;
 }
+
+// EDITION SOUS TITRE
 
 .edittitleform {
     color: slategrey;
@@ -82,7 +84,7 @@
    button:focus {
      outline: none;
      resize: none;
-     border-bottom: 3px solid #8400ff;
+     border-bottom: 2px solid #8400ff;
    }
    #slider-range-min {
      outline: 0;
@@ -118,7 +120,7 @@
      border-radius: 10px;
      color: slategrey;
      background: rgba(34, 34, 34, 0.0);
-     border: 3px solid #8400ff;
+     border: 2px solid #8400ff;
      height: 70px;
      width: 150px;
      float: right;
@@ -126,9 +128,9 @@
      font-size: 12px;
      text-transform: uppercase;
      letter-spacing: 1px;
-     transition: ease-in-out 0.25s;
+     transition: ease-in-out 0.30s;
      span {
-       transition: ease-in-out 0.25s;
+       transition: ease-in-out 0.30s;
      }
    }
    button:hover {
@@ -149,11 +151,41 @@
 //  FIN DU STYLE FORMULAIRE
 
 
+  @media(max-width:1200px){
+  .size-form {
+    width: 350px;
+    margin-left: 46vh;
+}
 
-
-#map {
-   height: 100vh;
-   width: 100%;
+.wallpaperheader {
+  background: url(assets/completecontactpage.jpeg);
+  background-repeat: no-repeat;
+}
 
   }
 
+  @media(max-width:992px){
+  .size-form {
+    width: 350px;
+    margin-left: 27vh;
+}
+
+.wallpaperheader {
+  background: url(assets/completecontactpage.jpeg);
+  background-repeat: no-repeat;
+}
+
+  }
+
+  @media (max-width: 768px) {
+    .size-form {
+      width: 350px;
+      margin-left: 12vh;
+  }
+
+  .wallpaperheader {
+    background: url(assets/completecontactpage.jpeg);
+    background-repeat: no-repeat;
+  }
+    
+   }

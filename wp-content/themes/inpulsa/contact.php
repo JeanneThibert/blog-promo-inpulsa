@@ -5,10 +5,6 @@
 
 get_header(); ?>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
-   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-   crossorigin=""/>
-
 <div class="wallpaperheader"><p class="editcontacttitle d-flex justify-content-center align-items-center">Contactez-nous</p></div>
 
 <div class="d-flex justify-content-center"><h2 class="edittitleform">Vos renseignements</h2></div>
@@ -16,12 +12,16 @@ get_header(); ?>
 <div class="container formulaire p-0">
   <div class="container-fluid">
 
+
+
+
+
     <div class="col-md-12">
-      <form method="post" action="submit.php">
+      <form method="post" action="['PHP_SELF']">
         <ul class="contact-form p-0">
           <li class="size-form">
             <div>
-              <input name="name" placeholder="Prénom" required="required" size="8" type="text">
+              <input name="name" placeholder="Prénom" required="required" size="8" type="text" value="<?php echo $name;?>">
             </div>
 
             <div>
@@ -39,20 +39,21 @@ get_header(); ?>
 
           <li>
             <div class="d-flex justify-content-center">
-              <button type="submit">Envoyer <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
+              <button type="submit" name="submit"">Envoyer <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
             </div>
           </li>
 
 
         </ul>
       </form>
+
     </div>
 
   </div>
 </div>
 
-
-<div id="map"></div>
+<?php echo do_shortcode("[leaflet-map height=600px lat=47.636911 lng=6.151828 zoom=16]"); ?>
+<?php echo do_shortcode("[leaflet-marker svg color='red' iconClass='fas fa-map-marker' background='red' visible]<img src='../../../gravit/acs.png' alt='online' width='300px'><a href='https://www.accesscodeschool.fr/'>Accéder au site</a><p>19 Rue de Praley, 70000 Vesoul</p><p>03 84 76 52 44</p>[/leaflet-marker]"); ?>
 
 
 
@@ -61,10 +62,4 @@ get_header(); ?>
 
 
 <?php get_footer(); ?>
-
-<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-   crossorigin=""></script>
-   
-<script type="text/javascript" src="contact.js"></script>
 
