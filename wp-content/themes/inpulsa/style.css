@@ -1,7 +1,6 @@
 .wallpaperheader {
   background: url(assets/completecontactpage.jpeg);
-  background-repeat: no-repeat;
-  height: 70vh; }
+  background-repeat: no-repeat; }
 
 .editcontacttitle {
   color: white;
@@ -62,7 +61,7 @@
   .contact-form button:focus {
     outline: none;
     resize: none;
-    border-bottom: 3px solid #8400ff; }
+    border-bottom: 2px solid #8400ff; }
   .contact-form #slider-range-min {
     outline: 0;
     background: slategrey;
@@ -93,7 +92,7 @@
     border-radius: 10px;
     color: slategrey;
     background: rgba(34, 34, 34, 0);
-    border: 3px solid #8400ff;
+    border: 2px solid #8400ff;
     height: 70px;
     width: 150px;
     float: right;
@@ -101,9 +100,9 @@
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: ease-in-out 0.25s; }
+    transition: ease-in-out 0.30s; }
     .contact-form button span {
-      transition: ease-in-out 0.25s; }
+      transition: ease-in-out 0.30s; }
   .contact-form button:hover {
     background: #8400ff;
     color: white; }
@@ -115,15 +114,47 @@
   width: 350px;
   margin-left: 368px; }
 
-#map {
-  height: 100vh;
-  width: 100%; }
+@media (max-width: 1200px) {
+  .size-form {
+    width: 350px;
+    margin-left: 46vh; }
+
+  .wallpaperheader {
+    background: url(assets/completecontactpage.jpeg);
+    background-repeat: no-repeat; } }
+@media (max-width: 992px) {
+  .size-form {
+    width: 350px;
+    margin-left: 27vh; }
+
+  .wallpaperheader {
+    background: url(assets/completecontactpage.jpeg);
+    background-repeat: no-repeat; } }
+@media (max-width: 768px) {
+  .size-form {
+    width: 350px;
+    margin-left: 12vh; }
 
 .page-membre {
   height: 50vh;
   background: url(../../../gravit/bg-accueil.jpeg);
   background-position: center;
   background-size: cover; }
+  .wallpaperheader {
+    background: url(assets/completecontactpage.jpeg);
+    background-repeat: no-repeat; } }
+.image--cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  border: 2px solid rgba(51, 37, 74, 0.486); }
 
 .title-membre {
   color: white;
@@ -616,5 +647,28 @@ footer {
   .section-projet h4 {
     font-size: 2.5rem;
     font-weight: 700; }
+
+.pagination {
+  height: 25vh; }
+  .pagination .wp-pagenavi {
+    clear: both; }
+  .pagination .wp-pagenavi a, .pagination .wp-pagenavi span {
+    text-decoration: none;
+    color: #5d5d5d;
+    padding: 5px 15px;
+    margin: 2px; }
+  .pagination .wp-pagenavi a {
+    transition: .2s; }
+    .pagination .wp-pagenavi a:hover {
+      color: skyblue;
+      font-weight: bold; }
+  .pagination .wp-pagenavi .previouspostslink, .pagination .nextpostslink {
+    background-color: #d4d4d4;
+    color: #5d5d5d;
+    border-radius: 7%; }
+  .pagination .wp-pagenavi a:hover, .pagination .wp-pagenavi span.current {
+    border-color: #000; }
+  .pagination .wp-pagenavi span.current {
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

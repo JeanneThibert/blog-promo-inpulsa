@@ -11,6 +11,7 @@ function inpulsa_scripts(){
 
     //chargement des js
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), INPULSA_VERSION, true );
+    // wp_enqueue_script( 'inpulsa_admin_script', get_template_directory_uri() . '/js/leaflet.js', array('jquery', 'bootstrap-js'), INPULSA_VERSION, true );
     wp_enqueue_script( 'inpulsa_admin_script', get_template_directory_uri() . '/js/inpulsa.js', array('jquery', 'bootstrap-js'), INPULSA_VERSION, true );
 
 }
@@ -149,16 +150,49 @@ function inpulsa_give_me_meta_01($date1, $date2, $cat) {
 
 }
 
-function new_excerpt_more($more) {
-    return '';
-    }
-    add_filter('excerpt_more', 'new_excerpt_more', 21 );
-    
-    function the_excerpt_more_link( $excerpt ){
-    $post = get_post();
-    $excerpt .= '<a href="'. get_permalink($post->ID) . '">Lire la suite</a>.';
-    return $excerpt;
-    }
-    add_filter( 'the_excerpt', 'the_excerpt_more_link', 21 );
+function wpm_custom_post_type() {
 
-    
+	// On rentre les différentes dénominations de notre custom post type qui seront affichées dans l'administration
+	$labels = array(
+		// Le nom au pluriel
+		'name'                => _x( 'Projets', 'Post Type General Name'),
+		// Le nom au singulier
+		'singular_name'       => _x( 'Projets', 'Post Type Singular Name'),
+		// Le libellé affiché dans le menu
+		'menu_name'           => __( 'Projets'),
+		// Les différents libellés de l'administration
+		'all_items'           => __( 'Toutes les rojets'),
+		'view_item'           => __( 'Voir les Projets'),
+		'add_new_item'        => __( 'Ajouter un nouveau projet'),
+		'add_new'             => __( 'Ajouter'),
+		'edit_item'           => __( 'Editer le projet'),
+		'update_item'         => __( 'Modifier le projet'),
+		'search_items'        => __( 'Rechercher un projet'),
+		'not_found'           => __( 'Non trouvée'),
+		'not_found_in_trash'  => __( 'Non trouvée dans la corbeille'),
+	);
+	
+	// On peut définir ici d'autres options pour notre custom post type
+	
+	$args = array(
+		'label'               => __( 'Projets'),
+		'description'         => __( 'Tous sur les projets'),
+		'labels'              => $labels,
+		// On définit les options disponibles dans l'éditeur de notre custom post type ( un titre, un auteur...)
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+		/* 
+		* Différentes options supplémentaires
+		*/	
+		'hierarchical'        => false,
+		'public'              => true,
+		'has_archive'         => true,
+		'rewrite'			  => array( 'slug' => 'projets'),
+
+	);
+	
+	// On enregistre notre custom post type qu'on nomme ici "serietv" et ses arguments
+	register_post_type( 'projets', $args );
+
+}
+
+add_action( 'init', 'wpm_custom_post_type', 0 );
