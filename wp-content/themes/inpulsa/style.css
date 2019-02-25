@@ -135,6 +135,11 @@
     width: 350px;
     margin-left: 12vh; }
 
+.page-membre {
+  height: 50vh;
+  background: url(../../../gravit/bg-accueil.jpeg);
+  background-position: center;
+  background-size: cover; }
   .wallpaperheader {
     background: url(assets/completecontactpage.jpeg);
     background-repeat: no-repeat; } }
