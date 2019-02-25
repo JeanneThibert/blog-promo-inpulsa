@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <?php $args_blog = array(
-    'post_type' => 'post',
-    'posts_per_page' => 2
+    'post_type' => 'projets',
+    'posts_per_page' => 6
 );
 $req_blog = new WP_Query($args_blog); ?>
 
@@ -51,44 +51,53 @@ $req_blog = new WP_Query($args_blog); ?>
 <section id="blog-front" class="section-projet d-flex flex-column justify-content-center align-items-center">
     <h4 class="text-center mb-5">Nos projets récents</h4>
     <img src="../../../gravit/lg_logo_langues.png" alt="techno" class="techno mb-5">
-    <div class="container">
-        <div class="row">
-            
-            <?php while($req_blog->have_posts() ): $req_blog->the_post(); ?>
-
-                <div class="col-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h2><?php the_title(); ?></h2>
-                        </div>
-
-                        <div class="panel-footer">
-                        <p>
-                            <?php
-                                echo inpulsa_give_me_meta_01(
-                                    esc_attr( get_the_date( 'c') ),
-                                    esc_html( get_the_date()),
-                                    get_the_category_list( ', '),
-                                    get_the_tag_list('', ', ')
-                                ); ?>
-
-                        </p>
-                    </div>
-                    </div>
-                    <div class="panel-body">
-                        <?php the_post_thumbnail('medium',
-                             array('class' => 'img-fluid aligncenter' ) ); ?>
-                        <?php the_excerpt(); ?>
-
-                    </div>
+    <div class="container-fluid all-projets">
+        <div class="container">
+            <div class="row">
+                
+                <?php while($req_blog->have_posts() ): $req_blog->the_post(); ?>
+                
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-3 d-flex flex-column justify-content-center align-items-center projets">
                     
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <?php the_content(); ?>
+                        </div>
+                      
+                    </div>  
                 </div>
             
-            <?php endwhile; wp_reset_postdata(); ?>
+                <?php endwhile; wp_reset_postdata(); ?>
             </div>
         </div>
+    </div>
+
 </section>
 
 <?php endif; ?>
 
 <?php get_footer(); ?>
+
+
+<!-- <div class="image-projet">
+<div class="panel-heading">
+                        <h2 class="text-center"><?php the_title(); ?></h2>
+                    </div>
+
+  <div class="panel-footer">
+                            <p class="text-center">
+                            <?php
+                                    echo inpulsa_give_me_meta_01(
+                                        esc_attr( get_the_date( 'c') ),
+                                        esc_html( get_the_date()),
+                                        get_the_category_list( ', '),
+                                        get_the_tag_list('', ', ')
+                                    ); ?>
+                            </p>
+                        </div>
+
+
+    <?php the_post_thumbnail('medium',
+        array('class' => 'img-fluid aligncenter img-projet' ) ); ?>
+</div> 

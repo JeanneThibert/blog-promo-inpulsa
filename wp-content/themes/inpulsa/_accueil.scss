@@ -132,10 +132,36 @@ footer{
     margin-top: -10vh;
 }
 .section-projet{
-    padding: 10vh;
+    padding-top: 10vh;
     h4{
-        font-size: 2.5rem;
+        font-size: 4rem;
         font-weight: 700;
+    }
+    .all-projets{
+        background-color: #f0f0f0;
+        padding: 15vh;
+        .projets{
+            .panel-body{
+                box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.12);
+                transition: .2s;
+                &:hover{
+                   
+                }
+                img{
+                    transition: .2s;
+                    filter: brightness(85%);
+                    &:hover{
+                        // opacity: .8;
+                        filter: none;
+                        transform: translateY(-1px);
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: lightcoral;
+                }
+            }
+        }
     }
 }
 .pagination{

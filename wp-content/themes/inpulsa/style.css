@@ -135,26 +135,14 @@
     width: 350px;
     margin-left: 12vh; }
 
+  .wallpaperheader {
+    background: url(assets/completecontactpage.jpeg);
+    background-repeat: no-repeat; } }
 .page-membre {
   height: 50vh;
   background: url(../../../gravit/bg-accueil.jpeg);
   background-position: center;
   background-size: cover; }
-  .wallpaperheader {
-    background: url(assets/completecontactpage.jpeg);
-    background-repeat: no-repeat; } }
-.image--cover {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-  border: 2px solid rgba(51, 37, 74, 0.486); }
 
 .title-membre {
   color: white;
@@ -643,10 +631,25 @@ footer {
   margin-top: -10vh; }
 
 .section-projet {
-  padding: 10vh; }
+  padding-top: 10vh; }
   .section-projet h4 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 700; }
+  .section-projet .all-projets {
+    background-color: #f0f0f0;
+    padding: 15vh; }
+    .section-projet .all-projets .projets .panel-body {
+      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.12);
+      transition: .2s; }
+      .section-projet .all-projets .projets .panel-body img {
+        transition: .2s;
+        filter: brightness(85%); }
+        .section-projet .all-projets .projets .panel-body img:hover {
+          filter: none;
+          transform: translateY(-1px); }
+      .section-projet .all-projets .projets .panel-body a {
+        text-decoration: none;
+        color: lightcoral; }
 
 .pagination {
   height: 25vh; }

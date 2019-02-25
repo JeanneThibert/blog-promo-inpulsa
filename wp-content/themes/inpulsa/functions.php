@@ -161,7 +161,7 @@ function wpm_custom_post_type() {
 		// Le libellé affiché dans le menu
 		'menu_name'           => __( 'Projets'),
 		// Les différents libellés de l'administration
-		'all_items'           => __( 'Toutes les rojets'),
+		'all_items'           => __( 'Toutes les projets'),
 		'view_item'           => __( 'Voir les Projets'),
 		'add_new_item'        => __( 'Ajouter un nouveau projet'),
 		'add_new'             => __( 'Ajouter'),
@@ -190,7 +190,7 @@ function wpm_custom_post_type() {
 
 	);
 	
-	// On enregistre notre custom post type qu'on nomme ici "serietv" et ses arguments
+	// On enregistre notre custom post type qu'on nomme ici "projets" et ses arguments
 	register_post_type( 'projets', $args );
 
 }
