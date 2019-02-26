@@ -25,9 +25,8 @@
 </head>
 <body>
     
-    <!--
     <header >
-        <nav class="navbar fixed-top mt-5 navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar mt-5 fixed-top navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="/"><img src="../../../gravit/logo-blanc.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,8 +39,8 @@
                 'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
                 'container'       => 'div',
                 'container_class' => 'collapse navbar-collapse',
-                'container_id'    => 'bs-example-navbar-collapse-1',
-                'menu_class'      => 'navbar-nav mr-auto',
+                'container_id'    => 'navbarNav',
+                'menu_class'      => 'navbar-nav d-flex flex-column justify-content-center align-items-center pb-3',
                 'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
                 'walker'          => new WP_Bootstrap_Navwalker(),
                 ) );
@@ -53,7 +52,6 @@
 <div class="time-lapse"> </div>
 
 </header>
--->
 
 <header class="d-flex justify-content-center align-items-center">
     <nav class="container-fluid nav-pc d-flex justify-content-center align-items-center">
@@ -64,3 +62,6 @@
         <a href="contact" class="liens">Contact</a>
     </nav>
 </header>
+
+<!--
+-->

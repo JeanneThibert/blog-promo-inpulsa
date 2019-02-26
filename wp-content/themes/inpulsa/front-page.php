@@ -50,7 +50,7 @@ $req_blog = new WP_Query($args_blog); ?>
 </div>
 <section id="blog-front" class="section-projet d-flex flex-column justify-content-center align-items-center">
     <h4 class="text-center mb-5">Nos projets récents</h4>
-    <img src="../../../gravit/lg_logo_langues.png" alt="techno" class="techno mb-5">
+    <img src="../../../gravit/lg_logo_langues.png" alt="techno" class="techno img-fluid mb-5">
     <div class="container-fluid all-projets">
         <div class="container">
             <div class="row">

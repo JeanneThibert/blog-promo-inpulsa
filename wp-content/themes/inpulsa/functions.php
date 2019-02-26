@@ -2,7 +2,7 @@
 
 //=========== chargement des scripts
 
-define('INPULSA_VERSION', '1.0.1');
+define('INPULSA_VERSION', '1.0.2');
 function inpulsa_scripts(){
 
     //chargement des styles

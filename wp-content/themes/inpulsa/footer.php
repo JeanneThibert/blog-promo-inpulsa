@@ -5,7 +5,7 @@
                 <p class="text-apropos">Si la formation t'intéresse n'hésite pas à <a href="#" class="lien-hover">nous contacter</a> pour la prochaine session.</p>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                <img src="../../../gravit/access.png" alt="logo-acs">
+                <img src="../../../gravit/access.png" alt="logo-acs" class="img-fluid">
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-end">
                 <p class="lien-hover">Mentions légales</p>
@@ -14,7 +14,7 @@
         </div>
        <div class="row w-100">
            <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-start">
-               <img src="../../../gravit/online.png" alt="online">
+               <img src="../../../gravit/online.png" alt="online" class="img-fluid">
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 icones d-flex justify-content-center align-items-center">
                 <a href="#"> <i class="fab fa-facebook-square"></i></a>
@@ -22,7 +22,7 @@
                 <a href="#"> <i class="fab fa-linkedin"></i></a>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-end">
-                <img src="../../../gravit/gen.png" alt="gen">
+                <img src="../../../gravit/gen.png" alt="gen" class="img-fluid">
             </div>
         </div>
 </footer>
