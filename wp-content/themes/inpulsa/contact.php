@@ -5,9 +5,13 @@
 
 get_header(); ?>
 
-<div class="wallpaperheader"><p class="editcontacttitle d-flex justify-content-center align-items-center">Contactez-nous</p></div>
+<div class="wallpaperheader">
+  <p class="editcontacttitle d-flex justify-content-center align-items-center">Contactez-nous</p>
+</div>
 
-<div class="d-flex justify-content-center"><h2 class="edittitleform">Vos renseignements</h2></div>
+<div class="d-flex justify-content-center">
+  <h2 class="edittitleform">Vos renseignements</h2>
+</div>
 
 <div class="container formulaire p-0">
   <div class="container-fluid">
@@ -15,37 +19,11 @@ get_header(); ?>
 
 
 
+    <div><?php echo do_shortcode("[weforms id='1552']"); ?></div>
+
 
     <div class="col-md-12">
-      <form method="post" action="['PHP_SELF']">
-        <ul class="contact-form p-0">
-          <li class="size-form">
-            <div>
-              <input name="name" placeholder="Prénom" required="required" size="8" type="text" value="<?php echo $name;?>">
-            </div>
-
-            <div>
-              <input name="email" placeholder="Email" required="required" size="8" type="email">
-            </div>
-          </li>
-
-
-          <li class="size-form">
-
-            <div>
-              <textarea class="span12" name="details" placeholder="Message" required="required"></textarea>
-            </div>
-          </li>
-
-          <li>
-            <div class="d-flex justify-content-center">
-              <button type="submit" name="submit"">Envoyer <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
-            </div>
-          </li>
-
-
-        </ul>
-      </form>
+    
 
     </div>
 
@@ -62,4 +40,3 @@ get_header(); ?>
 
 
 <?php get_footer(); ?>
-
