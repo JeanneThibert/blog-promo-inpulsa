@@ -17,7 +17,10 @@ $req_blog = new WP_Query($args_blog); ?>
         <span class="wrap"></span>
       </a>
     </h1>
-    
+    <video autoplay loop muted class="timelapse">
+        <source src="../../../gravit/timelapse.mp4" type="video/mp4">
+    </video>
+    <div class="filtre-timelapse"></div>
 </section>
 <section class="container section-presentation d-flex flex-column justify-content-center align-items-center">
     <div class="lapromo ">

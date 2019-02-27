@@ -100,9 +100,9 @@ footer{
 }
 .section-accueil{
     height: 100vh;
-    background: url(../../../gravit/bg-accueil.jpeg);
-    background-position: center;
-    background-size: cover;
+    // background: url(../../../gravit/bg-accueil.jpeg);
+    // background-position: center;
+    // background-size: cover;
     font-family: 'Proza Libre', sans-serif;
     h1{
         font-size: 4rem;
@@ -111,6 +111,25 @@ footer{
     a{
         text-decoration: none;
         color: #fff;
+    }
+    .timelapse{
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        z-index: -2;
+        }
+    .filtre-timelapse{
+        position: absolute;
+        background-color: #021b259c;      
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
     }
 }
 .section-presentation{

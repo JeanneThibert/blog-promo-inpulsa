@@ -12,6 +12,92 @@ jQuery(document).ready(function($){
 
 });
 
+
+// $(function() {
+//     // OPACITY OF BUTTON SET TO 0%
+//     $(".roll").css("opacity","0");
+     
+//     // ON MOUSE OVER
+//     $(".roll").hover(function () {
+     
+//     // SET OPACITY TO 70%
+//     $(this).stop().animate({
+//     opacity: .7
+//     }, "fast");
+//     },
+                  
+     
+//     // ON MOUSE OUT
+//     function () {
+     
+//     // SET OPACITY BACK TO 50%
+//     $(this).stop().animate({
+//     opacity: 0
+//     }, "slow");
+//     });
+//     });
+
+/*	gallery */
+$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            $('.filter').show('1000');
+        }
+        else
+        {
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+
+	        	if ($(".filter-button").removeClass("active")) {
+			$(this).removeClass("active");
+		    }
+		    	$(this).addClass("active");
+	    	});
+});
+/*	end gallery */
+
+// $(document).ready(function(){
+//     $(".fancybox").fancybox({
+//         openEffect: "none",
+//         closeEffect: "none"
+//     });
+// });
+
+$(document).ready(function(){
+ $(".fancybox").fancybox({
+        buttons: [
+        "zoom",
+        "fullScreen",
+        "share",
+        "thumbs",
+        "close"
+        ],
+        protect: true
+    });   
+});
+    
+
+   
+
+    // $(document).ready(function(){
+    //     $('img').addClass('test');
+    //     $('icon').css("display", "none"); 
+    //     $('img').mouseover(function(){
+    //      $('icon').css("display", "block");  
+    //     });
+    //     $('img').mouseout(function(){
+          
+    //     });
+    // })
+   
+    
+    // $('icon').css("display", "none");  
     // $("h1").css('color', "#f00")
     // MENU GALLERY
 
@@ -32,11 +118,23 @@ $("#portfolio").fadeTo(300, 1);
 });
    
 // function pour loupe sur image page équipe
-var modal = document.getElementById('demo-modal');
-var img = document.querySelector('loupe');
-var bigimg = document.querySelector('big');
-var modalImg = document.getElementById('modal-img');
-var captionText = document.getElementById('caption');
+// var modal = document.getElementById('demo-modal');
+// var img = document.querySelector('loupe');
+// var bigimg = document.querySelector('big');
+// var modalImg = document.getElementById('modal-img');
+// var captionText = document.getElementById('caption');
+
+
+// function openModal() {
+//     document.getElementById('myModal').style.display = "block";
+//   }
+  
+//   function closeModal() {
+//     document.getElementById('myModal').style.display = "none";
+//   }
+  
+ 
+  
 
 // for( i = 0 ; i < img.length; i++ ){
 //     if(img.options[i].selected){
@@ -131,4 +229,4 @@ window.onload = function() {
 
 
 
-
+    

@@ -6,9 +6,9 @@ Template Name: Équipe
 ?>
 <?php get_header(); ?>
 <section class="container-fluid page-membre d-flex justify-content-center align-items-center">
-<div class=" d-flex justify-content-center ">
-    <p class="title-membre">Les Membres et la Galerie</p>
-</div>
+    <div class=" d-flex justify-content-center ">
+        <p class="title-membre">Les Membres et la Galerie</p>
+    </div>
 </section>
 <section class="container-fluid section-membre">
     <div class="row">
@@ -243,202 +243,161 @@ Template Name: Équipe
 <!-- 
     
 -->
-<section  class="section-galerie" id="galerie">
-    <section class="container">
-        <div class="toolbar pb-5 pt-5">
-            <h1 class="team-membre d-flex justify-content-center pb-5">Galeries</h1>
-            <a class="choice fil-cat" data-rel="all">Toutes</a>
-            <a class="choice fil-cat" data-rel="web">Établissement</a>
-            <a class="choice fil-cat" data-rel="flyers">Projets</a>
-            <a class="choice fil-cat" data-rel="bcards">Équipes</a>
-        </div>
+<section class="section-galerie">
+    <section class="container portfolio" id="portfolio">
+        <div class="container-fluid">
+            <div class="row">
 
-        <div style="clear:both;"></div>
-        <div id="portfolio">
-            <div class="tile scale-anm web all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big"  src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/2-mon_1092-300x234.jpg"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
+                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                    <h1 class="gallery-title">Galeries</h1>
                 </div>
-            </div>
-            <div class="tile scale-anm bcards all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big"  src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm web all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big"  src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm web all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img  class="big"  src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/codystretch-300x270.jpg"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm flyers all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img  class="big"  src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm bcards all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big" src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm flyers all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big" src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm flyers all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big" src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm web all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big"  src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm flyers all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big"  src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm web all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big"  src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/the-ninetys-brand_02-300x300.jpg"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm bcards all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big"  src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/15-dia_1092-1-300x300.jpg"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm web all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big"  src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm bcards all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big" src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm web all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big" src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm web all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="tile scale-anm bcards all">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="big" src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290"
-                        alt="" />
-                    <div class="content-details fadeIn-right">
-                        <img class="loupe" class="img-fluid" src="../../../gravit/zoom-in.svg">
-                    </div>
-                </div>
-            </div>
 
-        </div>
-        
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 pt-5 pb-5">
+                    <a class="choice filter-button" data-filter="all">Toutes</a>
+                    <a class="choice filter-button" data-filter="category1">Projets</a>
+                    <a class="choice filter-button" data-filter="category2">Salles</a>
+                    <a class="choice filter-button" data-filter="category3">Équipe</a>
+                </div>
 
-        <div style="clear:both;"></div>
+                <br />
+                <br>
 
-        <div id="demo-modal" class="modal">
-            <span class="close">×</span>
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="modal-img">
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption"></div>
+                <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                    <div class="opacity">
+                        <a class="fancybox" rel="ligthbox" href="../../../gravit/bg-accueil.jpeg">
+                            <img class="img-fluid pr-1 pl-1 pb-1 pt-1 " alt="" src="../../../gravit/bg-accueil.jpeg" />
+                    </div>
+                    <div class='img-info'>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                    <div class="opacity">
+                        <a class="fancybox" rel="ligthbox" href="../../../gravit/img-acs/salles.jpg">
+                            <img class="img-fluid pr-1 pl-1 pb-1 pt-1" alt="" src="../../../gravit/img-acs/salles.jpg" />
+                    </div>
+                    <div class='img-info'>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                    <div class="opacity">
+                        <a class="fancybox" rel="ligthbox" href="../../../gravit/img-acs/salles-manu.jpg">
+                            <img class="img-fluid pr-1 pl-1 pb-1 pt-1" alt="" src="../../../gravit/img-acs/salles-manu.jpg" />
+                    </div>
+                    <div class='img-info'>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                    <div class="opacity">
+                        <a class="fancybox" rel="ligthbox" href="../../../gravit/img-acs/salle-geoffroy.jpg">
+                            <img class="img-fluid pr-1 pl-1 pb-1 pt-1" alt="" src="../../../gravit/img-acs/salle-geoffroy.jpg" />
+                    </div>
+                    <div class='img-info'>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                    <div class="opacity">
+                        <a class="fancybox" rel="ligthbox" href="../../../gravit/img-acs/salles.jpg">
+                            <img class="img-fluid pr-1 pl-1 pb-1 pt-1" alt="" src="../../../gravit/img-acs/salles.jpg" />
+                    </div>
+                    <div class='img-info'>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                    <div class="opacity">
+                        <a class="fancybox" rel="ligthbox" href="../../../gravit/img-acs/salles-jeanne.jpg">
+                            <img class="img-fluid pr-1 pl-1 pb-1 pt-1" alt="" src="../../../gravit/img-acs/salles-jeanne.jpg" />
+                    </div>
+                    <div class='img-info'>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                    <div class="opacity">
+                        <a class="fancybox" rel="ligthbox" href="../../../gravit/img-acs/salles.jpg">
+                            <img class="img-fluid pr-1 pl-1 pb-1 pt-1" alt="" src="../../../gravit/img-acs/salles.jpg" />
+                    </div>
+                    <div class='img-info'>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                    <div class="opacity">
+                        <a class="fancybox" rel="ligthbox" href="../../../gravit/img-acs/salles-manu.jpg">
+                            <img class="img-fluid pr-1 pl-1 pb-1 pt-1" alt="" src="../../../gravit/img-acs/salles-manu.jpg" />
+                    </div>
+                    <div class='img-info'>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                    <div class="opacity">
+                        <a class="fancybox" rel="ligthbox" href="../../../gravit/img-acs/salle-geoffroy.jpg">
+                            <img class="img-fluid pr-1 pl-1 pb-1 pt-1" alt="" src="../../../gravit/img-acs/salle-geoffroy.jpg" />
+                    </div>
+                    <div class='img-info'>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                    <div class="opacity">
+                        <a class="fancybox" rel="ligthbox" href="../../../gravit/img-acs/salles.jpg">
+                            <img class="img-fluid pr-1 pl-1 pb-1 pt-1" alt="" src="../../../gravit/img-acs/salles.jpg" />
+                    </div>
+                    <div class='img-info'>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category2">
+                    <div class="opacity">
+                        <a class="fancybox" rel="ligthbox" href="../../../gravit/img-acs/salles-manu.jpg">
+                            <img class="img-fluid pr-1 pl-1 pb-1 pt-1" alt="" src="../../../gravit/img-acs/salles-manu.jpg" />
+                    </div>
+                    <div class='img-info'>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                    <div class="opacity">
+                        <a class="fancybox" rel="ligthbox" href="../../../gravit/img-acs/salles-jeanne.jpg">
+                            <img class="img-fluid pr-1 pl-1 pb-1 pt-1" alt="" src="../../../gravit/img-acs/salles-jeanne.jpg" />
+                    </div>
+                    <div class='img-info'>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    </a>
+                </div>
+
+            </div>
         </div>
     </section>
+
 </section>
 
 
