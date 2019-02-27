@@ -1,0 +1,23 @@
+.page-mention {
+    height: 50vh;
+    background: url(../../../gravit/legal.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.title-mention{
+    color:white;
+    font-size: 43px;
+    font-family: 'Proza Libre' , sans-serif;
+}
+.section-mention{
+    padding: 10vh ;
+    .mention{
+        font-family: 'Quicksand' , sans-serif;
+        font-weight:bold;
+        font-size:25px;
+        
+    }
+    .legal{
+        font-family: 'Quicksand' , sans-serif;
+    }
+}

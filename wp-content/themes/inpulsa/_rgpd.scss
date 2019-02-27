@@ -1,0 +1,30 @@
+.page-rgpd {
+    height: 50vh;
+    background: url(../../../gravit/legal.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.title-rgpd{
+    color:white;
+    font-size: 45px;
+    font-family: 'Proza Libre' , sans-serif;
+}
+
+.section-rgpd{
+    padding: 10vh ;
+
+    .rgpd{
+            font-family: 'Quicksand' , sans-serif;
+            font-weight:bold;
+            font-size:25px;
+            
+        
+    }
+    .lien-hover{
+        color: #00406F;
+        &:hover{
+            color: #7b7b7b;
+            text-decoration: none;
+        }
+    }   
+}

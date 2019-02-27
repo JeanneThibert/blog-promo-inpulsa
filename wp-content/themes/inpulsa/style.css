@@ -452,4 +452,47 @@ footer {
     font-size: 2.5rem;
     font-weight: 700; }
 
+.page-mention {
+  height: 50vh;
+  background: url(../../../gravit/legal.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.title-mention {
+  color: white;
+  font-size: 43px;
+  font-family: 'Proza Libre' , sans-serif; }
+
+.section-mention {
+  padding: 10vh; }
+  .section-mention .mention {
+    font-family: 'Quicksand' , sans-serif;
+    font-weight: bold;
+    font-size: 25px; }
+  .section-mention .legal {
+    font-family: 'Quicksand' , sans-serif; }
+
+.page-rgpd {
+  height: 50vh;
+  background: url(../../../gravit/legal.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.title-rgpd {
+  color: white;
+  font-size: 45px;
+  font-family: 'Proza Libre' , sans-serif; }
+
+.section-rgpd {
+  padding: 10vh; }
+  .section-rgpd .rgpd {
+    font-family: 'Quicksand' , sans-serif;
+    font-weight: bold;
+    font-size: 25px; }
+  .section-rgpd .lien-hover {
+    color: #00406F; }
+    .section-rgpd .lien-hover:hover {
+      color: #7b7b7b;
+      text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */

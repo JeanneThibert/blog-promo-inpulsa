@@ -8,8 +8,8 @@
                 <img src="../../../gravit/access.png" alt="logo-acs">
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-end">
-                <p class="lien-hover">Mentions légales</p>
-                <p class="lien-hover">RGPD</p>
+                <a href="http://localhost:8080/mentions-legales/" class="lien-hover">Mentions légales</p>
+                <a href="http://localhost:8080/rgpd/" class="lien-hover">RGPD</p>
             </div>
         </div>
        <div class="row w-100">
