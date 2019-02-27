@@ -39,7 +39,7 @@ function add_fancybox_script() {
 add_action ('wp_enqueue_scripts', 'add_fancybox_script');
 // ENQUEUE CSS FANCYBOX
 function fancy_styles() {
-        wp_enqueue_style( 'fancybox-style','https://cdnjs.cloudflare.com/ajax/libs/fancybox/3..5/jquery.fancybox.min.css' );
+        wp_enqueue_style( 'fancybox-style','https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css' );
    
 };
 add_action( 'wp_enqueue_scripts', 'fancy_styles' );
