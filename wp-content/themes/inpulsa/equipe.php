@@ -39,11 +39,11 @@ Template Name: Équipe
                 <div class="back d-flex flex-column justify-content-center align-items-center">
                     <p>Développeur Full-Stack</p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
-                        <a href="#" class="liens-reseaux">CV</a>
+                        <a href="https://www.linkedin.com/in/antonin-landry-43a728162/" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Mflantier" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="https://antoninl.promo-23.codeur.online/cv.pdf" class="liens-reseaux">CV</a>
                     </div>
-                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
+                    <a href="https://antoninl.promo-23.codeur.online/" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -56,11 +56,11 @@ Template Name: Équipe
                 <div class="back d-flex flex-column justify-content-center align-items-center">
                     <p>Développeur Front-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
-                        <a href="#" class="liens-reseaux">CV</a>
+                        <a href="https://www.linkedin.com/in/aurelien-deloye/" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/aureliendeloye" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="https://aureliend.promo-23.codeur.online/cv%20a%20jour.pdf" class="liens-reseaux">CV</a>
                     </div>
-                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
+                    <a href="https://aureliend.promo-23.codeur.online/Portfolio%206/" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -73,11 +73,11 @@ Template Name: Équipe
                 <div class="back d-flex flex-column justify-content-center align-items-center">
                     <p>Développeur Back-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
-                        <a href="#" class="liens-reseaux">CV</a>
+                        <a href="https://www.linkedin.com/in/elodie-martin-05b964115/" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/elodiemartin" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="http://elodie-martin.com/img/CV.pdf" class="liens-reseaux">CV</a>
                     </div>
-                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
+                    <a href="http://elodie-martin.com/" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -90,11 +90,11 @@ Template Name: Équipe
                 <div class="back d-flex flex-column justify-content-center align-items-center">
                     <p>Développeur Full-Stack</p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
-                        <a href="#" class="liens-reseaux">CV</a>
+                        <a href="https://www.linkedin.com/in/fabien-cazalet-03670182/" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Louya" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="https://fabienc.promo-23.codeur.online/img/cv_web_dev_2018_FR.pdf" class="liens-reseaux">CV</a>
                     </div>
-                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
+                    <a href="https://fabienc.promo-23.codeur.online/" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -107,11 +107,11 @@ Template Name: Équipe
                 <div class="back d-flex flex-column justify-content-center align-items-center">
                     <p>Développeur Front-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
-                        <a href="#" class="liens-reseaux">CV</a>
+                        <a href="https://www.linkedin.com/in/ga%C3%ABtan-emond-777a9716b/" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/gaetanemd" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="https://emondg.promo-23.codeur.online/portfolio/app/download/cv_g.e.pdf" class="liens-reseaux">CV</a>
                     </div>
-                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
+                    <a href="https://emondg.promo-23.codeur.online/portfolio/app/" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -124,11 +124,11 @@ Template Name: Équipe
                 <div class="back d-flex flex-column justify-content-center align-items-center">
                     <p>Développeur Front-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
-                        <a href="#" class="liens-reseaux">CV</a>
+                        <a href="https://www.linkedin.com/in/geoffroy-carette-b65a19171/" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/CaretteGeoffroy" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="http://geoffroy-carette.com/files/carette_cv.pdf" class="liens-reseaux">CV</a>
                     </div>
-                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
+                    <a href="http://geoffroy-carette.com/" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -141,8 +141,8 @@ Template Name: Équipe
                 <div class="back d-flex flex-column justify-content-center align-items-center">
                     <p>Développeur Front-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ibrahim-sow-7a404110b/" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/ibrahimsow" class="liens-reseaux"><i class="fab fa-github"></i></a>
                         <a href="#" class="liens-reseaux">CV</a>
                     </div>
                     <a href="#" class="lien-portfolio">Voir le Portfolio</a>
@@ -158,11 +158,11 @@ Template Name: Équipe
                 <div class="back d-flex flex-column justify-content-center align-items-center">
                     <p>Développeur Front-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
-                        <a href="#" class="liens-reseaux">CV</a>
+                        <a href="https://www.linkedin.com/in/jeanne-thibert/" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/JeanneThibert" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="https://jeannet.promo-23.codeur.online/img/cv_jeanne.pdf" class="liens-reseaux">CV</a>
                     </div>
-                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
+                    <a href="https://jeannet.promo-23.codeur.online/" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -175,11 +175,11 @@ Template Name: Équipe
                 <div class="back d-flex flex-column justify-content-center align-items-center">
                     <p>Développeur Full-stack</p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
-                        <a href="#" class="liens-reseaux">CV</a>
+                        <a href="https://www.linkedin.com/in/jules-pageaux-3b9aa9174/" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Isochore" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="https://julesp.promo-23.codeur.online/cv.pdf" class="liens-reseaux">CV</a>
                     </div>
-                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
+                    <a href="https://julesp.promo-23.codeur.online/" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -192,11 +192,11 @@ Template Name: Équipe
                 <div class="back d-flex flex-column justify-content-center align-items-center">
                     <p>Développeur Back-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
-                        <a href="#" class="liens-reseaux">CV</a>
+                        <a href="https://www.linkedin.com/in/lucas-robin-b70963159/" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/lucas-acs" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="http://lucasrobin.fr/portfolio/cv" class="liens-reseaux">CV</a>
                     </div>
-                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
+                    <a href="http://lucasrobin.fr" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -209,11 +209,11 @@ Template Name: Équipe
                 <div class="back d-flex flex-column justify-content-center align-items-center">
                     <p>Développeur Back-End </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
-                        <a href="#" class="liens-reseaux">CV</a>
+                        <a href="https://www.linkedin.com/in/valérie-honoré-258073157/" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Valuminous" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="https://valerieh.promo-23.codeur.online/cv_vhonore.pdf" class="liens-reseaux">CV</a>
                     </div>
-                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
+                    <a href="https://valerieh.promo-23.codeur.online/" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
@@ -229,11 +229,11 @@ Template Name: Équipe
                     <div class="back d-flex flex-column justify-content-center align-items-center">
                         <p>Formateur</p>
                         <div class="d-flex justify-content-center align-items-center">
-                            <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
-                            <a href="#" class="liens-reseaux"><i class="fab fa-gitlab"></i></a>
+                            <a href="https://www.linkedin.com/in/emmanuel-bailly-salins-73181691/" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Keolite" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                            <a href="https://gitlab.com/keolite" class="liens-reseaux"><i class="fab fa-gitlab"></i></a>
                         </div>
-                        <a href="#" class="lien-portfolio">Access Code School</a>
+                        <a href="https://www.accesscodeschool.fr/" class="lien-portfolio">Access Code School</a>
                     </div>
                 </div>
             </div>
