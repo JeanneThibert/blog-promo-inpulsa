@@ -12,17 +12,19 @@ $req_blog = new WP_Query($args_blog); ?>
 <?php if ($req_blog->have_posts()): ?>
 
 <section class="container-fluid section-accueil d-flex justify-content-center align-items-center">
-    <h1>
+    <h1 class="text-center">
       <a href="" class="typewrite" data-period="2000" data-type='[ "Une ambiance qui motive", "Une méthode qui fait ses preuves", "Une filière pleine d\u0027avenir", "Une reconversion qui me réussit" ]'>
         <span class="wrap"></span>
       </a>
     </h1>
-    <video autoplay loop muted class="timelapse">
-        <source src="../../../gravit/timelapse.mp4" type="video/mp4">
-    </video>
-    <div class="filtre-timelapse"></div>
+    <div class="video-container">
+        <video autoplay loop muted class="timelapse">
+            <source src="../../../gravit/timelapse-acs.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- <div class="filtre-timelapse"></div> -->
 </section>
-<section class="container section-presentation d-flex flex-column justify-content-center align-items-center">
+    <section class="container section-presentation d-flex flex-column justify-content-center align-items-center">
     <div class="lapromo ">
         <h2 class="text-center">La Promo 23</h2>
         <p class="text-center">Access Code School</p>
@@ -48,9 +50,13 @@ $req_blog = new WP_Query($args_blog); ?>
         </div>
     </div>
 </section>
-<div class="container-fluid img-codeur">
 
-</div>
+
+<div class="continer-fluid parallax-window" data-parallax="scroll" data-image-src="../../../gravit/atelier.jpeg"></div>
+
+
+<!-- <img class="thumbnail img-codeur" src="../../../gravit/atelier.jpeg" alt="image"> -->
+
 <section id="blog-front" class="section-projet d-flex flex-column justify-content-center align-items-center">
     <h4 class="text-center mb-5">Nos projets récents</h4>
     <img src="../../../gravit/lg_logo_langues.png" alt="techno" class="techno img-fluid mb-5">

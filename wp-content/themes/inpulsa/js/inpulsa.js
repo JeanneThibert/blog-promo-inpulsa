@@ -9,8 +9,12 @@ jQuery(document).ready(function($){
         $(this).toggleClass('turn');
     });
 
-
+    
 });
+
+
+    
+
 
 
 // $(function() {
@@ -226,7 +230,3 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-
-
-
-    
