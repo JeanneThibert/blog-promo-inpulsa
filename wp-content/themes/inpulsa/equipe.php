@@ -21,11 +21,11 @@ Template Name: Équipe
                 <div class="back d-flex flex-column justify-content-center align-items-center">
                     <p>Développeur Full-Stack </p>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="liens-reseaux"><i class="fab fa-github"></i></a>
-                        <a href="#" class="liens-reseaux">CV</a>
+                        <a href="https://www.linkedin.com/in/abdelkrim-naji-851067181/" class="liens-reseaux"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Abdelkrimnaji" class="liens-reseaux"><i class="fab fa-github"></i></a>
+                        <a href="https://abdelkrimn.promo-23.codeur.online/cv.pdf" class="liens-reseaux">CV</a>
                     </div>
-                    <a href="#" class="lien-portfolio">Voir le Portfolio</a>
+                    <a href="https://abdelkrimn.promo-23.codeur.online/portfolio" class="lien-portfolio">Voir le Portfolio</a>
                 </div>
             </div>
         </div>
