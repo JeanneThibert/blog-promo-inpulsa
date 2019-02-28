@@ -458,7 +458,8 @@ footer {
     bottom: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    z-index: -1; }
     .section-accueil .video-container .timelapse {
       min-width: 100%;
       min-height: 100%;
@@ -491,9 +492,13 @@ footer {
   .section-presentation p {
     text-align: justify; }
 
-.parallax-window {
+.parallax {
+  position: relative;
+  margin-top: -10vh;
+  width: 100%;
   height: 60vh;
-  margin-top: -10vh; }
+  background: url(../../../gravit/online.jpeg);
+  background-attachment: fixed; }
 
 .section-projet {
   padding-top: 10vh; }

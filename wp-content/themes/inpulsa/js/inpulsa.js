@@ -8,9 +8,20 @@ jQuery(document).ready(function($){
     $(".profil").click(function(){
         $(this).toggleClass('turn');
     });
+    // var image = document.getElementsByClassName('thumbnail');
+    // new simpleParallax(image, {
+    //     delay: .6,
+    //     transition: 'cubic-bezier(0,0,0,1)'
+    // });
 
-    
+    $(window).scroll(function(){
+        var scroll_position = $(window).scrollTop()/3;
+        $('.parallax').css({
+            'background-position-x' : - scroll_position + 'px',
+        })
+    })
 });
+
 
 
     

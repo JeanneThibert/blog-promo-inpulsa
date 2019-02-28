@@ -1,20 +1,15 @@
 <?php 
 //=========== chargement des scripts
 
-define('INPULSA_VERSION', '1.0.3');
+define('INPULSA_VERSION', '1.0.2');
 function inpulsa_scripts(){
     //chargement des styles
     wp_enqueue_style( 'inpulsa_bootstrap-core', get_template_directory_uri() . '/css/bootstrap.min.css', array(), INPULSA_VERSION, 'all');
     wp_enqueue_style( 'inpulsa_custom', get_template_directory_uri() . '/style.css', array('inpulsa_bootstrap-core'), INPULSA_VERSION, 'all');
     //chargement des js
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), INPULSA_VERSION, true );
-    wp_enqueue_script( 'parallax-min-js', get_template_directory_uri() . '/js/parallax.min.js', array('jquery'), INPULSA_VERSION, true );
-    wp_enqueue_script( 'parallax-js', get_template_directory_uri() . '/js/parallax.js', array('jquery'), INPULSA_VERSION, true );
-
     // wp_enqueue_script( 'inpulsa_admin_script', get_template_directory_uri() . '/js/leaflet.js', array('jquery', 'bootstrap-js'), INPULSA_VERSION, true );
-    wp_enqueue_script( 'inpulsa_admin_script', get_template_directory_uri() . '/js/inpulsa.js', array('jquery', 'bootstrap-js', 'parallax-min-js', 'parallax-js'), INPULSA_VERSION, true );
-
-    
+    wp_enqueue_script( 'inpulsa_admin_script', get_template_directory_uri() . '/js/inpulsa.js', array('jquery', 'bootstrap-js'), INPULSA_VERSION, true );
 }
 add_action('wp_enqueue_scripts', 'inpulsa_scripts');
 function inpulsa_include_custom_jquery() {
@@ -23,13 +18,6 @@ function inpulsa_include_custom_jquery() {
     
 }
 add_action('wp_enqueue_scripts', 'inpulsa_include_custom_jquery');
-
-function inpulsa_include_custom_jquery_11() {
-	wp_deregister_script('jquery');
-    wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', array(), null, true);
-    
-}
-add_action('wp_enqueue_scripts', 'inpulsa_include_custom_jquery_11');
 //google font
 function add_google_fonts() {
  
@@ -60,7 +48,7 @@ add_action( 'wp_enqueue_scripts', 'fancy_styles' );
 // Parallax Effect
 
 // function add_parallax_script(){
-//     wp_enqueue_script ('parallax-script', 'https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js' , array(), '1.4.2', true);
+//     wp_enqueue_script ('parallax-script', 'https://cdn.jsdelivr.net/npm/simple-parallax-js@4.0.0/dist/simpleParallax.min.js', array(), '4.0.0', true);
 // }
 // add_action ('wp_enqueue_scripts', 'add_parallax_script');
 

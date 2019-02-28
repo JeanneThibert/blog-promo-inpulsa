@@ -52,10 +52,16 @@ $req_blog = new WP_Query($args_blog); ?>
 </section>
 
 
-<div class="continer-fluid parallax-window" data-parallax="scroll" data-image-src="../../../gravit/atelier.jpeg"></div>
+<!-- <div class="container-fluid img-codeur">
 
+</div> -->
+<!-- 
+<img class="thumbnail img-codeur" src="../../../gravit/atelier.jpeg" alt="image"> -->
 
-<!-- <img class="thumbnail img-codeur" src="../../../gravit/atelier.jpeg" alt="image"> -->
+<section class="parallax">
+
+</section>
+
 
 <section id="blog-front" class="section-projet d-flex flex-column justify-content-center align-items-center">
     <h4 class="text-center mb-5">Nos projets récents</h4>
