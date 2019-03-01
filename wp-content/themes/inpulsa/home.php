@@ -22,7 +22,7 @@ Template Name: articles
     <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
   </form>
 
-<section>
+<section class="section-articles">
        
     <div class="container">
         

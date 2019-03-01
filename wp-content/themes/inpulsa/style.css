@@ -247,9 +247,41 @@
       font-size: 1.3rem;
       margin: 0 !important; }
 
+.video-acs {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  z-index: -1; }
+  .video-acs .acs-video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    z-index: -2;
+    display: none; }
+    @media (min-width: 1200px) {
+      .video-acs .acs-video {
+        display: block; } }
+  .video-acs .parallax-acs {
+    position: relative;
+    margin-top: -10vh;
+    width: 100%;
+    height: 60vh;
+    background: url(../../../gravit/acs-working.jpg);
+    background-attachment: fixed; }
+    @media (min-width: 1200px) {
+      .video-acs .parallax-acs {
+        display: none; } }
+
 /*	menu */
 .section-galerie {
   padding: 10vh 1rem;
+  min-height: 100vh;
   /*	gallery */ }
   .section-galerie .choice {
     color: #000;
@@ -359,6 +391,13 @@ input#search-bar {
   top: -62px;
   right: -15px; }
 
+.section-articles h1 a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.616);
+  transition: .2s; }
+  .section-articles h1 a:hover {
+    color: #00a2e4; }
+
 .navbar {
   background-color: #1b3d5f !important;
   font-family: 'Quicksand', sans-serif !important;
@@ -402,6 +441,17 @@ input#search-bar {
     transition: .2s; }
     .nav-pc img:hover {
       transform: translateY(4px) rotateZ(-15deg); }
+
+.go-up {
+  position: fixed;
+  top: 70vh;
+  right: 2%;
+  color: #9e2f2f;
+  z-index: 1050;
+  display: none; }
+  .go-up i {
+    font-size: 4rem;
+    color: #9e2f2fc9; }
 
 footer {
   background-color: #1E1E1E;
@@ -492,7 +542,7 @@ footer {
   .section-presentation p {
     text-align: justify; }
 
-.parallax {
+.parallax-accueil {
   position: relative;
   margin-top: -10vh;
   width: 100%;
@@ -544,6 +594,49 @@ footer {
     border-color: #000; }
   .pagination .wp-pagenavi span.current {
     font-weight: bold; }
+
+.page-mention {
+  height: 50vh;
+  background: url(../../../gravit/legal.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.title-mention {
+  color: white;
+  font-size: 43px;
+  font-family: 'Proza Libre' , sans-serif; }
+
+.section-mention {
+  padding: 10vh; }
+  .section-mention .mention {
+    font-family: 'Quicksand' , sans-serif;
+    font-weight: bold;
+    font-size: 25px; }
+  .section-mention .legal {
+    font-family: 'Quicksand' , sans-serif; }
+
+.page-rgpd {
+  height: 50vh;
+  background: url(../../../gravit/legal.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.title-rgpd {
+  color: white;
+  font-size: 45px;
+  font-family: 'Proza Libre' , sans-serif; }
+
+.section-rgpd {
+  padding: 10vh; }
+  .section-rgpd .rgpd {
+    font-family: 'Quicksand' , sans-serif;
+    font-weight: bold;
+    font-size: 25px; }
+  .section-rgpd .lien-hover {
+    color: #00406F; }
+    .section-rgpd .lien-hover:hover {
+      color: #7b7b7b;
+      text-decoration: none; }
 
 body {
   margin: 0;

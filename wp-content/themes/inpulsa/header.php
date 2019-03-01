@@ -25,8 +25,8 @@
 </head>
 <body>
     
-    <header >
-        <nav class="navbar mt-5 fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <header id="haut-de-page">
+        <nav class="navbar mt-5 fixed-top navbar-expand-lg navbar-dark bg-dark" >
             <a class="navbar-brand" href="/"><img src="../../../gravit/logo-blanc.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
 
 </header>
 
-<header class="d-flex justify-content-center align-items-center">
+<header class="d-flex justify-content-center align-items-center" id="haut-de-page">
     <nav class="container-fluid nav-pc d-flex justify-content-center align-items-center">
         <a href="http://localhost:8080/lequipe" class="liens">Membres</a>
         <a href="http://localhost:8080/lequipe#galerie" class="liens">Galerie</a>
@@ -63,6 +63,9 @@
     </nav>
 </header>
 
+<a href="#haut-de-page" class="go-up">
+    <i class="fas fa-caret-up"></i>
+</a>
 
 
 <!--

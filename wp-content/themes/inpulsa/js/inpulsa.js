@@ -20,9 +20,75 @@ jQuery(document).ready(function($){
             'background-position-x' : - scroll_position + 'px',
         })
     })
+
+    var fullScreen = $(window).height();
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll > 100) {
+        $(".go-up").css("display", "block");
+        console.log("block");
+    } else {
+        $(".go-up").css("display", "none");
+      console.log("none");
+
+    }
+  });
 });
 
+// transition for btn haut de page
 
+(function () {
+    var speed = 600;
+    var moving_frequency = 15; // Affects performance !
+  
+    var links = document.querySelectorAll("a"); // Active links
+  
+    var href;
+  
+    for (var i = 0; i < links.length; i++) {
+      href = links[i].attributes.href === undefined ? null : links[i].attributes.href.nodeValue.toString();
+  
+      if (href !== null && href.length > 1 && href.substr(0, 1) == '#') {
+        links[i].onclick = function () {
+          var element;
+          var href = this.attributes.href.nodeValue.toString();
+  
+          if (element = document.getElementById(href.substr(1))) {
+            var hop_count = speed / moving_frequency;
+            var getScrollTopDocumentAtBegin = getScrollTopDocument();
+            var gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hop_count;
+  
+            for (var j = 1; j <= hop_count; j++) {
+              (function () {
+                var hop_top_position = gap * j;
+                setTimeout(function () {
+                  window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin);
+                }, moving_frequency * j);
+              })();
+            }
+          }
+  
+          return false;
+        };
+      }
+    }
+  
+    var getScrollTopElement = function getScrollTopElement(e) {
+      var top = 0;
+  
+      while (e.offsetParent != undefined && e.offsetParent != null) {
+        top += e.offsetTop + (e.clientTop != null ? e.clientTop : 0);
+        e = e.offsetParent;
+      }
+  
+      return top;
+    };
+  
+    var getScrollTopDocument = function getScrollTopDocument() {
+      return document.documentElement.scrollTop + document.body.scrollTop;
+    };
+  })();
 
     
 
@@ -52,7 +118,7 @@ jQuery(document).ready(function($){
 //     });
 //     });
 
-/*	gallery */
+/*	gallery filtre  */
 $(document).ready(function(){
 
     $(".filter-button").click(function(){
@@ -75,14 +141,7 @@ $(document).ready(function(){
 		    	$(this).addClass("active");
 	    	});
 });
-/*	end gallery */
 
-// $(document).ready(function(){
-//     $(".fancybox").fancybox({
-//         openEffect: "none",
-//         closeEffect: "none"
-//     });
-// });
 
 $(document).ready(function(){
  $(".fancybox").fancybox({
@@ -95,92 +154,7 @@ $(document).ready(function(){
         ],
         protect: true
     });   
-});
-    
-
-   
-
-    // $(document).ready(function(){
-    //     $('img').addClass('test');
-    //     $('icon').css("display", "none"); 
-    //     $('img').mouseover(function(){
-    //      $('icon').css("display", "block");  
-    //     });
-    //     $('img').mouseout(function(){
-          
-    //     });
-    // })
-   
-    
-    // $('icon').css("display", "none");  
-    // $("h1").css('color', "#f00")
-    // MENU GALLERY
-
-var selectedClass = "";
-$(".fil-cat").click(function(){ 
-    console.log("fil-cat");
-selectedClass = $(this).attr("data-rel"); 
-console.log("data-rel");
-$("#portfolio").fadeTo(100, 0.1);
-console.log("portfolio");
-$("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
-setTimeout(function() {
-$("."+selectedClass).fadeIn().addClass('scale-anm');
-console.log("scale-anm");
-$("#portfolio").fadeTo(300, 1);
-}, 300); 
-
-});
-   
-// function pour loupe sur image page équipe
-// var modal = document.getElementById('demo-modal');
-// var img = document.querySelector('loupe');
-// var bigimg = document.querySelector('big');
-// var modalImg = document.getElementById('modal-img');
-// var captionText = document.getElementById('caption');
-
-
-// function openModal() {
-//     document.getElementById('myModal').style.display = "block";
-//   }
-  
-//   function closeModal() {
-//     document.getElementById('myModal').style.display = "none";
-//   }
-  
- 
-  
-
-// for( i = 0 ; i < img.length; i++ ){
-//     if(img.options[i].selected){
-// img.addEventListener('click', function(e){
-    
-//     modal.style.display = "block";
-//     modalImg.src = bigimg.src;
-//     modalImg.alt = bigimg.alt;
-//     captionText.innerHTML = bigimg.alt;
-//     console.log('coucou');
-// })
-// }
-// };
-
-
-
-// img.onclick = function() {
-//     console.log('loupe');
-//     console.log('big');
-//   modal.style.display = "block";
-//   modalImg.src = bigimg.src;
-//   modalImg.alt = bigimg.alt;
-//   captionText.innerHTML = bigimg.alt;
-// }
-
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() { 
-//   modal.style.display = "none";
-// }
+}); 
 
 
 
