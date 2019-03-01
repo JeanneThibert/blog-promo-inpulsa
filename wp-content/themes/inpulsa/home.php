@@ -8,7 +8,6 @@ Template Name: articles
 
 
 
-
 <?php get_header(); ?>
 
 
