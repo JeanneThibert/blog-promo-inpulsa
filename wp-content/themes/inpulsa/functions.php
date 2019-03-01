@@ -1,6 +1,7 @@
 <?php 
 //=========== chargement des scripts
-define('INPULSA_VERSION', '1.0.1');
+
+define('INPULSA_VERSION', '1.0.2');
 function inpulsa_scripts(){
     //chargement des styles
     wp_enqueue_style( 'inpulsa_bootstrap-core', get_template_directory_uri() . '/css/bootstrap.min.css', array(), INPULSA_VERSION, 'all');
@@ -43,6 +44,15 @@ function fancy_styles() {
    
 };
 add_action( 'wp_enqueue_scripts', 'fancy_styles' );
+
+// Parallax Effect
+
+// function add_parallax_script(){
+//     wp_enqueue_script ('parallax-script', 'https://cdn.jsdelivr.net/npm/simple-parallax-js@4.0.0/dist/simpleParallax.min.js', array(), '4.0.0', true);
+// }
+// add_action ('wp_enqueue_scripts', 'add_parallax_script');
+
+
 // chargement de l'admin
 function inpulsa_admin_init(){
 // *******************action 1
@@ -115,7 +125,9 @@ function inpulsa_give_me_meta_01($date1, $date2, $cat) {
     // $chaine .= ' avec les étiquettes: '. $tags;
     return $chaine;
 }
+
 function wpm_custom_post_type() {
+
 	// On rentre les différentes dénominations de notre custom post type qui seront affichées dans l'administration
 	$labels = array(
 		// Le nom au pluriel
@@ -155,4 +167,7 @@ function wpm_custom_post_type() {
 	
 	// On enregistre notre custom post type qu'on nomme ici "projets" et ses arguments
 	register_post_type( 'projets', $args );
+
 }
+
+add_action( 'init', 'wpm_custom_post_type', 0 );

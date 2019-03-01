@@ -58,7 +58,10 @@ Template Name: articles
             
     </div>
 </section>
+<div class="pagination d-flex justify-content-center align-items-center">
 
+    <?php wp_pagenavi(); ?>
+</div>
 
 <?php get_footer(); ?>
 
