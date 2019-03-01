@@ -1,6 +1,6 @@
 .img_header_article{
     background:  url("../../../gravit/fond_article_final.jpeg") no-repeat center;
-    height:80vh;
+    height:70vh;
     background-size: cover;
     font-family: 'Proza Libre', sans-serif;
 }
@@ -19,6 +19,7 @@
     margin: 0 auto;
     margin-top: 150px;
     margin-inline-end: 5px;
+    
   }
   
   input#search-bar{
@@ -30,6 +31,7 @@
     border: 1px solid #D0CFCE;
     outline: none;
     top:60vh;
+    
     &:focus{
       border: 1px solid #33254A;
       transition: 0.35s ease;
@@ -56,6 +58,7 @@
     height: 70px;
     top: -58px;
     right: -5px;
+    
   }
 
   

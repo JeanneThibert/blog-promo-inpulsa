@@ -1,9 +1,13 @@
 .navbar{
-    background-color: transparent !important;
+    background-color: #1b3d5f !important;
     font-family: 'Quicksand', sans-serif !important;
+    display: none;
+    @media (max-width: 991px) { 
+        display: flex;
+    }
     .navbar-brand{
         img{
-            height: 140px;
+            height: 60px;
             transition: .82s;
             &:hover{
                 transform: translateY(4px) scale(0.95) rotateZ(-20deg);
@@ -11,9 +15,7 @@
         }
     }
     .nav-link{
-        color: #fff !important;
-        padding: 0px 30px;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 400;
         transition: .2s;
         &:hover{
@@ -27,13 +29,17 @@
     top: 0vh;
     background-color: rgba(0, 0, 0, 0.50);
     font-family: 'Quicksand', sans-serif;
+    // display: flex !important;
+    @media (max-width: 991px) { 
+        display: none !important;
+    }
     a{
         color: #fff;
         text-decoration: none;
         padding: 0px 30px;
         font-size: 1.5rem;
         font-weight: 400;
-        transition: .2s;
+        transition: .4s;
         &:hover{
             transform: translateY(-4px);
             color: #c0c0c0;
@@ -42,9 +48,10 @@
     }
     img{
         height: 140px;
-        transition: .82s;
+        transition: .2s;
         &:hover{
-            transform: translateY(4px) scale(0.95) rotateZ(-20deg);
+            transform: translateY(4px)  rotateZ(-15deg);
+        
         }
     }
     
@@ -56,6 +63,9 @@ footer{
     font-family: 'Quicksand', sans-serif;
     .text-apropos{
         width: 70%!important;
+        @media (max-width: 575px) { 
+        width: 100%!important;
+         }
     }
     .lien-hover{
         color: #7b7b7b;
@@ -70,6 +80,9 @@ footer{
             margin: 2.5vw;
             color: #7b7b7b;
             transition: .1s;
+            @media (max-width: 575px) { 
+                margin: 6.5vw;
+             }
             &:hover{
                 color: #fff;
                 transform: scale(1.1) translateY(-3px);
@@ -87,17 +100,44 @@ footer{
 }
 .section-accueil{
     height: 100vh;
-    background: url(../../../gravit/bg-accueil.jpeg);
-    background-position: center;
-    background-size: cover;
+    // background: url(../../../gravit/bg-accueil.jpeg);
+    // background-position: center;
+    // background-size: cover;
     font-family: 'Proza Libre', sans-serif;
     h1{
         font-size: 4rem;
         font-weight: 700;
+        @media (max-width: 575px) {
+        font-size: 2.5rem;
+        }
+        @media (min-width: 576px) and (max-width: 767px) {
+        font-size: 3rem;
+        }
     }
     a{
         text-decoration: none;
         color: #fff;
+    }
+    .video-container{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%; 
+        overflow: hidden;
+        z-index: -1;
+
+        .timelapse{
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: auto;
+            height: auto;
+            z-index: -2;
+            }
     }
 }
 .section-presentation{
@@ -105,7 +145,7 @@ footer{
     margin-top: -10vh;
     z-index: 1000;
     position: relative;
-    background-color: #33254A;
+    background-color: #00406f;
     color: #fff;
     box-shadow: 5px -4px 20px #0000007a;
     font-family: 'Quicksand', sans-serif;
@@ -124,18 +164,46 @@ footer{
         text-align: justify;
     }
 }
-.img-codeur{
-    height: 50vh;
-    background: url(../../../gravit/team.jpeg);
-    background-position: center;
-    background-size: cover;
+.parallax{
+    position: relative;
     margin-top: -10vh;
+    width: 100%;
+    height: 60vh;
+    background:  url(../../../gravit/online.jpeg);
+    background-attachment: fixed;
 }
 .section-projet{
-    padding: 10vh;
+    padding-top: 10vh;
     h4{
-        font-size: 2.5rem;
+        font-size: 4rem;
         font-weight: 700;
+    }
+    .all-projets{
+        background-color: #f5f5f5;
+        .projets{
+            .panel-body{
+                box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.12);
+                transition: .2s;
+                &:hover{
+                   
+                }
+                img{
+                    transition: .2s;
+                    filter: brightness(85%);
+                    max-width: 100%;
+                    height: auto;
+                    &:hover{
+                        // opacity: .8;
+                        filter: none;
+                        transform: translateY(-1px);
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: lightcoral;
+                }
+            }
+        }
     }
 }
 .pagination{
