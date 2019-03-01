@@ -13,12 +13,30 @@
   margin-bottom: 5vh;
   font-size: 4vh; }
 
+.leaflet-popup-content {
+  text-align: center; }
+
+.linkacs {
+  margin-top: 2vh; }
+
+.linkacssize {
+  font-size: 1rem; }
+
+.edittxtpopup {
+  font-weight: bold; }
+
 .weforms_submit_btn {
-  background: #6222ca !important;
-  border-color: #6222ca !important;
-  text-shadow: 0 -1px 1px #4f2f83, 1px 0 1px #4f2f83, 0 1px 1px #4f2f83, -1px 0 1px #4f2f83 !important;
-  box-shadow: 0 1px 0 #5c15ce !important;
+  background: #00406F !important;
+  border-color: #00406F !important;
+  text-shadow: 0 -1px 1px #00406F , 1px 0 1px #00406F , 0 1px 1px #00406F , -1px 0 1px #00406F !important;
+  box-shadow: 0 1px 0 #00406F !important;
   margin-bottom: 9vh !important; }
+
+form {
+  width: 100% !important; }
+
+.wpuf-fields {
+  width: 100% !important; }
 
 .wpuf-success {
   text-align: center !important; }

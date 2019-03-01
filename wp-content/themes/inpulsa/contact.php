@@ -13,25 +13,12 @@ get_header(); ?>
   <h2 class="edittitleform">Vos renseignements</h2>
 </div>
 
-<div class="container formulaire p-0">
-  <div class="container-fluid">
-
-
-
-
-    <div><?php echo do_shortcode("[weforms id='1552']"); ?></div>
-
-
-    <div class="col-md-12">
-    
-
+    <div class="container-fluid">
+    <div class="container d-flex flex-column p-5 justify-content-center align-items-center"><?php echo do_shortcode("[weforms id='1552']"); ?></div>
     </div>
 
-  </div>
-</div>
-
 <?php echo do_shortcode("[leaflet-map height=600px lat=47.636911 lng=6.151828 zoom=16]"); ?>
-<?php echo do_shortcode("[leaflet-marker svg color='red' iconClass='fas fa-map-marker' background='red' visible]<img src='../../../gravit/acs.png' alt='online' width='300px'><a href='https://www.accesscodeschool.fr/'>Accéder au site</a><p>19 Rue de Praley, 70000 Vesoul</p><p>03 84 76 52 44</p>[/leaflet-marker]"); ?>
+<?php echo do_shortcode("[leaflet-marker svg color='red' iconClass='fas fa-map-marker' background='red' visible]<img src='../../../gravit/acs.png' alt='online' width='200px'><div class='d-flex justify-content-center'><img class='d-flex align-items-left pr-2'src='../../../gravit/adress.svg'><p class='edittxtpopup'>19 Rue de Praley, 70000 Vesoul</p></div><div class='d-flex justify-content-center'><img class='d-flex align-items-left pr-2' src='../../../gravit/phone.svg'><p class='edittxtpopup'>03 84 76 52 44</p></div><div class='linkacs'><a class='linkacssize' href='https://www.accesscodeschool.fr/'>Accéder au site</a></div>[/leaflet-marker]"); ?>
 
 
 
