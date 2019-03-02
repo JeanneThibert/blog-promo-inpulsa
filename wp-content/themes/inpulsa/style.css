@@ -545,11 +545,6 @@ footer {
   .pagination .wp-pagenavi span.current {
     font-weight: bold; }
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; }
-
 .page-mention {
   height: 50vh;
   background: url(../../../gravit/legal.jpg);
@@ -592,5 +587,10 @@ body {
     .section-rgpd .lien-hover:hover {
       color: #7b7b7b;
       text-decoration: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
 
 /*# sourceMappingURL=style.css.map */
