@@ -58,7 +58,7 @@ $req_blog = new WP_Query($args_blog); ?>
 <!-- 
 <img class="thumbnail img-codeur" src="../../../gravit/atelier.jpeg" alt="image"> -->
 
-<section class="parallax">
+<section class="parallax parallax-accueil">
 
 </section>
 

@@ -1,22 +1,25 @@
 .img_header_article{
-    background:  url("../../../gravit/fond_maquette_final_filtre.svg") no-repeat center;
-    height:60vh;
+    background:  url("../../../gravit/fond_article_final.jpeg") no-repeat center;
+    height:70vh;
     background-size: cover;
+    font-family: 'Proza Libre', sans-serif;
 }
 
 .texte{
    color:white;
-   font-size:60px; 
-   text-align:center;   
+   font-size:70px; 
+   text-align:center;
+   font-family: 'Proza Libre', sans-serif;   
 }
 
   
   .search-container{
-    width: 300px;
+    width: 275px;
     display: block;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 150px;
     margin-inline-end: 5px;
+    
   }
   
   input#search-bar{
@@ -27,7 +30,8 @@
     font-size: 1rem;
     border: 1px solid #D0CFCE;
     outline: none;
-    top:80vh;
+    top:60vh;
+    
     &:focus{
       border: 1px solid #33254A;
       transition: 0.35s ease;
@@ -50,11 +54,23 @@
   .search-icon{
     position: relative;
     float: right;
-    width: 75px;
-    height: 75px;
-    top: -62px;
-    right: -15px;
+    width: 70px;
+    height: 70px;
+    top: -58px;
+    right: -5px;
+    
   }
-
+.section-articles{
+  h1{
+    a{
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.616);
+      transition: .2s;
+      &:hover{
+        color: #00a2e4;
+      }
+    }
+  }
+}
   
   

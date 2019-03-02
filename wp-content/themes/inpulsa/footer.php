@@ -20,7 +20,9 @@
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-center">
                 <img src="../../../gravit/access.png" alt="logo-acs" class="img-fluid">
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-end">
+
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-center align-items-lg-end">
                 <a href="http://localhost:8080/mentions-legales/" class="lien-hover">Mentions légales</p>
                 <a href="http://localhost:8080/rgpd/" class="lien-hover">RGPD</p>
             </div>

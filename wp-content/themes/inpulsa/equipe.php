@@ -243,6 +243,12 @@ Template Name: Équipe
 <!-- 
     
 -->
+<section class="video-acs">
+<video autoplay loop muted class="acs-video">
+    <source src="../../../gravit/acs-working-video.mp4" type="video/mp4">
+</video>
+<div class="parallax parallax-acs"></div>
+</section>
 <section class="section-galerie">
     <section class="container portfolio" id="portfolio">
         <div class="container-fluid">

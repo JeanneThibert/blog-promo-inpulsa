@@ -53,8 +53,19 @@
             transform: translateY(4px)  rotateZ(-15deg);
         
         }
+    }    
+}
+.go-up{
+    position: fixed;
+    top: 70vh;
+    right: 2%;
+    color: #9e2f2f;
+    z-index: 1050;
+    display: none;
+    i{
+        font-size: 4rem;
+        color: #9e2f2fc9;
     }
-    
 }
 footer{
     background-color: #1E1E1E;
@@ -164,7 +175,10 @@ footer{
         text-align: justify;
     }
 }
-.parallax{
+// .parallax{
+   
+// }
+.parallax-accueil{
     position: relative;
     margin-top: -10vh;
     width: 100%;
